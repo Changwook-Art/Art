@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG Stock Tracker - Environmental, Social & Governance Ratings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h1>🌱 ESG Stock Tracker</h1>
+                <p class="subtitle">Track Environmental, Social & Governance Performance of US Stocks</p>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="ticker-input" 
+                    placeholder="Enter stock ticker (e.g., AAPL, TSLA, MSFT)" 
+                    maxlength="10"
+                >
+                <button id="search-btn" onclick="searchStock()">
+                    🔍 Search
+                </button>
+            </div>
+            <div class="available-stocks">
+                <p>Available stocks: AAPL, MSFT, GOOGL, TSLA, AMZN, META, NVDA, JPM, JNJ, PG</p>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" class="results-section hidden">
+            <div class="company-header">
+                <h2 id="company-name"></h2>
+                <p id="company-meta"></p>
+            </div>
+
+            <!-- Overall Score -->
+            <div class="overall-score-card">
+                <h3>Overall ESG Score</h3>
+                <div id="overall-score" class="score-display"></div>
+                <div id="score-rating" class="rating"></div>
+            </div>
+
+            <!-- Individual Scores -->
+            <div class="esg-breakdown">
+                <!-- Environmental -->
+                <div class="esg-card environmental">
+                    <div class="esg-header">
+                        <h3>🌍 Environmental (E)</h3>
+                        <span id="env-score" class="score"></span>
+                    </div>
+                    <div id="env-bar" class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <ul id="env-activities" class="activities-list"></ul>
+                </div>
+
+                <!-- Social -->
+                <div class="esg-card social">
+                    <div class="esg-header">
+                        <h3>👥 Social (S)</h3>
+                        <span id="social-score" class="score"></span>
+                    </div>
+                    <div id="social-bar" class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <ul id="social-activities" class="activities-list"></ul>
+                </div>
+
+                <!-- Governance -->
+                <div class="esg-card governance">
+                    <div class="esg-header">
+                        <h3>⚖️ Governance (G)</h3>
+                        <span id="gov-score" class="score"></span>
+                    </div>
+                    <div id="gov-bar" class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <ul id="gov-activities" class="activities-list"></ul>
+                </div>
+            </div>
+
+            <!-- Data Update Info -->
+            <div class="update-info">
+                <p id="last-updated"></p>
+            </div>
+        </section>
+
+        <!-- Error Message -->
+        <div id="error-message" class="error-message hidden">
+            <p>❌ Stock ticker not found. Please try one of the available stocks.</p>
+        </div>
+
+        <!-- Welcome Message -->
+        <div id="welcome-message" class="welcome-message">
+            <div class="welcome-content">
+                <h2>Welcome to ESG Stock Tracker</h2>
+                <p>Search for a stock ticker to view its Environmental, Social, and Governance (ESG) performance.</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h4>🌍 Environmental</h4>
+                        <p>Climate change initiatives, renewable energy, waste management, and carbon footprint reduction.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>👥 Social</h4>
+                        <p>Labor practices, diversity & inclusion, human rights, and community engagement.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>⚖️ Governance</h4>
+                        <p>Board structure, executive compensation, transparency, and ethical business practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>📊 ESG Stock Tracker | MVP v1.0 | Sample data for educational purposes</p>
+            <p>🚀 Future: Real-time API integration planned</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
