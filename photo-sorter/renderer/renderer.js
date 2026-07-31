@@ -10,16 +10,22 @@
  * All processing runs locally in this window. No image ever leaves the machine.
  */
 
-// Distance below which two face descriptors are considered the same person.
-// Lower = stricter (more, smaller groups). Higher = more lenient (fewer,
-// bigger groups). Real event photos (varied light/angle/expression) need a
-// looser value than the textbook 0.5, so we default a bit higher and let the
-// user fine-tune with a live slider.
-const DEFAULT_THRESHOLD = 0.58;
+// Distance below which a face is considered the same person as a cluster.
+// Compared against the cluster's AVERAGE face (centroid linkage), so this can
+// be tighter than a naive pairwise threshold while still keeping a person's
+// varied shots together. Lower = stricter (purer groups). The user can fine-
+// tune with a live slider.
+const DEFAULT_THRESHOLD = 0.5;
 
 // Downscale large photos before detection: faster, and plenty accurate for
 // finding and encoding faces.
 const MAX_DIM = 1024;
+
+// Quality gate — faces failing these are ignored for clustering. Small,
+// background, or blurry faces produce unreliable descriptors and are the main
+// cause of wrong photos leaking into a person's folder.
+const MIN_FACE_PX = 56;     // face box width on the (<=1024px) analysis canvas
+const MIN_DET_SCORE = 0.55; // SSD detection confidence
 
 // State
 const state = {
@@ -27,6 +33,7 @@ const state = {
   faces: [],        // [{ photoPath, descriptor: Float32Array, crop: dataUrl }]
   clusters: [],     // [{ label, paths: string[], avatar: dataUrl }]
   noFace: [],       // photo paths with no detected face
+  skipped: 0,       // low-quality faces dropped by the quality gate
   threshold: DEFAULT_THRESHOLD,
   analyzed: false,
   modelsReady: false,
@@ -218,7 +225,8 @@ async function analyze() {
   setBusy(true);
   state.faces = [];
   state.noFace = [];
-  const options = new faceapi.SsdMobilenetv1Options({ minConfidence: 0.5 });
+  state.skipped = 0; // low-quality faces dropped from clustering
+  const options = new faceapi.SsdMobilenetv1Options({ minConfidence: MIN_DET_SCORE });
 
   for (let i = 0; i < state.photos.length; i++) {
     const photo = state.photos[i];
@@ -234,11 +242,14 @@ async function analyze() {
         .withFaceLandmarks()
         .withFaceDescriptors();
 
-      if (!detections.length) {
-        state.noFace.push(photo.path);
-        continue;
-      }
+      let kept = 0;
       for (const d of detections) {
+        // Quality gate: skip small / low-confidence faces — their descriptors
+        // are unreliable and pollute clusters.
+        if (d.detection.box.width < MIN_FACE_PX || d.detection.score < MIN_DET_SCORE) {
+          state.skipped++;
+          continue;
+        }
         const { crop, sharpness, area } = faceCropAndSharpness(canvas, d.detection.box);
         state.faces.push({
           photoPath: photo.path,
@@ -247,7 +258,9 @@ async function analyze() {
           sharpness,
           area,
         });
+        kept++;
       }
+      if (kept === 0) state.noFace.push(photo.path);
     } catch (e) {
       console.warn('분석 실패:', photo.path, e);
       state.noFace.push(photo.path);
@@ -265,51 +278,57 @@ async function analyze() {
   refreshButtons();
 }
 
-// Two-stage clustering.
+// Two-stage clustering with CENTROID linkage (compares against a cluster's
+// average face, not its nearest single member).
 //
-// Stage 1 (greedy, single-linkage): walk faces once, dropping each into the
-// nearest existing cluster if any member is within `threshold`, else start a
-// new cluster. Fast, but order-dependent — the same person can end up split
-// across several clusters depending on which face was seen first.
+// Why centroid, not single-linkage: single-linkage lets one ambiguous face act
+// as a "bridge" that chains two different people into one cluster — which is
+// exactly how a stranger's photos leak into someone's folder. Comparing to the
+// running average is far more robust: a face joins a cluster only if it's close
+// to what that cluster looks like on the whole.
 //
-// Stage 2 (consolidation, average-linkage): repeatedly merge any two clusters
-// whose *average* pairwise distance is within `threshold`, until stable. This
-// stitches those accidental fragments back together. Average (not single)
-// linkage here avoids "chaining" two different people together through one
-// ambiguous face.
+// Stage 1: assign each face to the nearest cluster centroid within `threshold`,
+// else start a new cluster. Stage 2: merge clusters whose centroids are within
+// `threshold` (recovers a person accidentally split by processing order).
+function centroidOf(sum, count) {
+  const m = new Float32Array(sum.length);
+  for (let i = 0; i < sum.length; i++) m[i] = sum[i] / count;
+  return m;
+}
+
 function clusterFaces(faces, threshold) {
-  // Each cluster tracks its representative face = the sharpest one seen so far
-  // (ties broken by larger face area). `best` holds that face's crop + score.
-  const clusters = []; // { descriptors, paths, crop, bestSharp, bestArea }
+  // cluster: { sum:Float32Array, count, mean, paths, crop, bestSharp, bestArea }
+  const clusters = [];
 
-  const isBetterRep = (face, c) =>
-    face.sharpness > c.bestSharp ||
-    (face.sharpness === c.bestSharp && face.area > c.bestArea);
+  const addFace = (c, face) => {
+    for (let i = 0; i < face.descriptor.length; i++) c.sum[i] += face.descriptor[i];
+    c.count++;
+    c.mean = centroidOf(c.sum, c.count);
+    c.paths.add(face.photoPath);
+    if (face.sharpness > c.bestSharp ||
+        (face.sharpness === c.bestSharp && face.area > c.bestArea)) {
+      c.crop = face.crop;
+      c.bestSharp = face.sharpness;
+      c.bestArea = face.area;
+    }
+  };
 
-  // Stage 1
+  // Stage 1 — nearest-centroid assignment.
   for (const face of faces) {
     let best = null;
     let bestDist = Infinity;
     for (const c of clusters) {
-      let d = Infinity;
-      for (const desc of c.descriptors) {
-        const dist = faceapi.euclideanDistance(face.descriptor, desc);
-        if (dist < d) d = dist;
-      }
-      if (d < bestDist) { bestDist = d; best = c; }
+      const dist = faceapi.euclideanDistance(face.descriptor, c.mean);
+      if (dist < bestDist) { bestDist = dist; best = c; }
     }
-
     if (best && bestDist < threshold) {
-      best.descriptors.push(face.descriptor);
-      best.paths.add(face.photoPath);
-      if (isBetterRep(face, best)) {
-        best.crop = face.crop;
-        best.bestSharp = face.sharpness;
-        best.bestArea = face.area;
-      }
+      addFace(best, face);
     } else {
+      const sum = Float32Array.from(face.descriptor);
       clusters.push({
-        descriptors: [face.descriptor],
+        sum,
+        count: 1,
+        mean: centroidOf(sum, 1),
         paths: new Set([face.photoPath]),
         crop: face.crop,
         bestSharp: face.sharpness,
@@ -318,23 +337,24 @@ function clusterFaces(faces, threshold) {
     }
   }
 
-  // Stage 2
+  // Stage 2 — merge clusters whose centroids are within threshold.
   let merged = true;
   while (merged) {
     merged = false;
     for (let i = 0; i < clusters.length && !merged; i++) {
       for (let j = i + 1; j < clusters.length; j++) {
-        if (avgDistance(clusters[i].descriptors, clusters[j].descriptors) < threshold) {
+        if (faceapi.euclideanDistance(clusters[i].mean, clusters[j].mean) < threshold) {
           const a = clusters[i];
           const b = clusters[j];
-          // Keep whichever cluster held the sharper representative face.
+          for (let k = 0; k < a.sum.length; k++) a.sum[k] += b.sum[k];
+          a.count += b.count;
+          a.mean = centroidOf(a.sum, a.count);
+          b.paths.forEach((p) => a.paths.add(p));
           if (b.bestSharp > a.bestSharp) {
             a.crop = b.crop;
             a.bestSharp = b.bestSharp;
             a.bestArea = b.bestArea;
           }
-          a.descriptors.push(...b.descriptors);
-          b.paths.forEach((p) => a.paths.add(p));
           clusters.splice(j, 1);
           merged = true;
           break;
@@ -350,29 +370,6 @@ function clusterFaces(faces, threshold) {
     paths: Array.from(c.paths),
     avatar: c.crop,
   }));
-}
-
-// Average pairwise distance between two descriptor sets (average linkage).
-// Samples at most SAMPLE descriptors per side so big clusters stay cheap.
-function avgDistance(a, b) {
-  const SAMPLE = 8;
-  const as = stride(a, SAMPLE);
-  const bs = stride(b, SAMPLE);
-  let sum = 0;
-  let n = 0;
-  for (const x of as) {
-    for (const y of bs) { sum += faceapi.euclideanDistance(x, y); n++; }
-  }
-  return n ? sum / n : Infinity;
-}
-
-// Deterministic evenly-spaced sample of up to k items (no RNG).
-function stride(arr, k) {
-  if (arr.length <= k) return arr;
-  const step = arr.length / k;
-  const out = [];
-  for (let i = 0; i < k; i++) out.push(arr[Math.floor(i * step)]);
-  return out;
 }
 
 // Re-run clustering from already-computed descriptors (no re-analysis) and
@@ -395,9 +392,10 @@ function renderResults() {
   const totalFaces = state.faces.length;
   el.resultsTitle.textContent = `${totalPeople}명의 인물을 찾았어요`;
   el.resultsSub.textContent =
-    `사진 ${state.photos.length}장에서 얼굴 ${totalFaces}개 검출` +
+    `사진 ${state.photos.length}장에서 얼굴 ${totalFaces}개 사용` +
+    (state.skipped ? ` · 작거나 흐린 얼굴 ${state.skipped}개 제외` : '') +
     (state.noFace.length ? ` · 얼굴 없음/실패 ${state.noFace.length}장` : '') +
-    ` · 이름을 직접 수정한 뒤 내보낼 수 있습니다.`;
+    ` · 슬라이더로 묶음을 조절하고 이름을 수정한 뒤 내보낼 수 있습니다.`;
 
   for (const cluster of state.clusters) {
     el.grid.appendChild(personCard(cluster));
@@ -562,6 +560,7 @@ el.btnClear.addEventListener('click', () => {
   state.faces = [];
   state.clusters = [];
   state.noFace = [];
+  state.skipped = 0;
   state.analyzed = false;
   el.progressWrap.hidden = true;
   updatePhotoCount();
