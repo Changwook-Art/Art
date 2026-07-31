@@ -11,9 +11,11 @@
  */
 
 // Distance below which two face descriptors are considered the same person.
-// Lower = stricter (more groups, fewer wrong merges). 0.5 is a good default
-// for the face-api recognition model.
-const MATCH_THRESHOLD = 0.5;
+// Lower = stricter (more, smaller groups). Higher = more lenient (fewer,
+// bigger groups). Real event photos (varied light/angle/expression) need a
+// looser value than the textbook 0.5, so we default a bit higher and let the
+// user fine-tune with a live slider.
+const DEFAULT_THRESHOLD = 0.58;
 
 // Downscale large photos before detection: faster, and plenty accurate for
 // finding and encoding faces.
@@ -25,6 +27,7 @@ const state = {
   faces: [],        // [{ photoPath, descriptor: Float32Array, crop: dataUrl }]
   clusters: [],     // [{ label, paths: string[], avatar: dataUrl }]
   noFace: [],       // photo paths with no detected face
+  threshold: DEFAULT_THRESHOLD,
   analyzed: false,
   modelsReady: false,
 };
@@ -46,6 +49,8 @@ const el = {
   resultsTitle: document.getElementById('resultsTitle'),
   resultsSub: document.getElementById('resultsSub'),
   grid: document.getElementById('grid'),
+  thSlider: document.getElementById('thSlider'),
+  thVal: document.getElementById('thVal'),
 };
 
 // ---------------------------------------------------------------------------
@@ -186,7 +191,7 @@ async function analyze() {
   }
 
   setProgress(0.98, '인물별로 묶는 중…');
-  state.clusters = clusterFaces(state.faces);
+  state.clusters = clusterFaces(state.faces, state.threshold);
   state.analyzed = true;
   setBusy(false);
   setProgress(1, '완료');
@@ -194,26 +199,35 @@ async function analyze() {
   refreshButtons();
 }
 
-// Greedy clustering: assign each face to the nearest existing cluster if it is
-// within MATCH_THRESHOLD, otherwise start a new cluster.
-function clusterFaces(faces) {
+// Two-stage clustering.
+//
+// Stage 1 (greedy, single-linkage): walk faces once, dropping each into the
+// nearest existing cluster if any member is within `threshold`, else start a
+// new cluster. Fast, but order-dependent — the same person can end up split
+// across several clusters depending on which face was seen first.
+//
+// Stage 2 (consolidation, average-linkage): repeatedly merge any two clusters
+// whose *average* pairwise distance is within `threshold`, until stable. This
+// stitches those accidental fragments back together. Average (not single)
+// linkage here avoids "chaining" two different people together through one
+// ambiguous face.
+function clusterFaces(faces, threshold) {
   const clusters = []; // { descriptors: Float32Array[], paths: Set, crop }
 
+  // Stage 1
   for (const face of faces) {
     let best = null;
     let bestDist = Infinity;
     for (const c of clusters) {
-      // Distance to a cluster = smallest distance to any of its members.
       let d = Infinity;
       for (const desc of c.descriptors) {
         const dist = faceapi.euclideanDistance(face.descriptor, desc);
         if (dist < d) d = dist;
-        if (d < bestDist) break;
       }
       if (d < bestDist) { bestDist = d; best = c; }
     }
 
-    if (best && bestDist < MATCH_THRESHOLD) {
+    if (best && bestDist < threshold) {
       best.descriptors.push(face.descriptor);
       best.paths.add(face.photoPath);
     } else {
@@ -225,6 +239,27 @@ function clusterFaces(faces) {
     }
   }
 
+  // Stage 2
+  let merged = true;
+  while (merged) {
+    merged = false;
+    for (let i = 0; i < clusters.length && !merged; i++) {
+      for (let j = i + 1; j < clusters.length; j++) {
+        if (avgDistance(clusters[i].descriptors, clusters[j].descriptors) < threshold) {
+          // Keep the larger cluster's representative face for the avatar.
+          if (clusters[j].descriptors.length > clusters[i].descriptors.length) {
+            clusters[i].crop = clusters[j].crop;
+          }
+          clusters[i].descriptors.push(...clusters[j].descriptors);
+          clusters[j].paths.forEach((p) => clusters[i].paths.add(p));
+          clusters.splice(j, 1);
+          merged = true;
+          break;
+        }
+      }
+    }
+  }
+
   // Largest groups first, then label.
   clusters.sort((a, b) => b.paths.size - a.paths.size);
   return clusters.map((c, i) => ({
@@ -232,6 +267,38 @@ function clusterFaces(faces) {
     paths: Array.from(c.paths),
     avatar: c.crop,
   }));
+}
+
+// Average pairwise distance between two descriptor sets (average linkage).
+// Samples at most SAMPLE descriptors per side so big clusters stay cheap.
+function avgDistance(a, b) {
+  const SAMPLE = 8;
+  const as = stride(a, SAMPLE);
+  const bs = stride(b, SAMPLE);
+  let sum = 0;
+  let n = 0;
+  for (const x of as) {
+    for (const y of bs) { sum += faceapi.euclideanDistance(x, y); n++; }
+  }
+  return n ? sum / n : Infinity;
+}
+
+// Deterministic evenly-spaced sample of up to k items (no RNG).
+function stride(arr, k) {
+  if (arr.length <= k) return arr;
+  const step = arr.length / k;
+  const out = [];
+  for (let i = 0; i < k; i++) out.push(arr[Math.floor(i * step)]);
+  return out;
+}
+
+// Re-run clustering from already-computed descriptors (no re-analysis) and
+// repaint. Used by the live sensitivity slider.
+function recluster() {
+  if (!state.analyzed) return;
+  state.clusters = clusterFaces(state.faces, state.threshold);
+  renderResults();
+  refreshButtons();
 }
 
 // ---------------------------------------------------------------------------
@@ -322,7 +389,19 @@ function unsortedCard() {
   return card;
 }
 
-// Show up to a few thumbnails; load them lazily via IPC.
+// Cache decoded image data URLs by path so re-clustering (slider drags) does
+// not re-read files from disk every time.
+const imgCache = new Map();
+function getImage(path) {
+  if (imgCache.has(path)) return Promise.resolve(imgCache.get(path));
+  return window.api.readImage(path).then((res) => {
+    const url = res.ok ? res.dataUrl : null;
+    imgCache.set(path, url);
+    return url;
+  });
+}
+
+// Show up to a few thumbnails; load them lazily via IPC (cached).
 function thumbStrip(paths) {
   const wrap = document.createElement('div');
   wrap.className = 'thumbs';
@@ -330,7 +409,7 @@ function thumbStrip(paths) {
   for (const p of shown) {
     const img = document.createElement('img');
     img.alt = '';
-    window.api.readImage(p).then((res) => { if (res.ok) img.src = res.dataUrl; });
+    getImage(p).then((url) => { if (url) img.src = url; });
     wrap.appendChild(img);
   }
   if (paths.length > shown.length) {
@@ -411,6 +490,16 @@ el.btnClear.addEventListener('click', () => {
 
 el.btnAnalyze.addEventListener('click', analyze);
 el.btnExport.addEventListener('click', exportClusters);
+
+// Live sensitivity slider: update the label immediately, and re-cluster once
+// the user pauses (debounced) so dragging stays smooth.
+let reclusterTimer = null;
+el.thSlider.addEventListener('input', () => {
+  state.threshold = Number(el.thSlider.value) / 100;
+  el.thVal.textContent = state.threshold.toFixed(2);
+  clearTimeout(reclusterTimer);
+  reclusterTimer = setTimeout(recluster, 180);
+});
 
 // Drag & drop
 ['dragenter', 'dragover'].forEach((ev) =>
