@@ -45,6 +45,9 @@ const el = {
   progressFill: document.getElementById('progressFill'),
   progressText: document.getElementById('progressText'),
   dropzone: document.getElementById('dropzone'),
+  preview: document.getElementById('preview'),
+  previewGrid: document.getElementById('previewGrid'),
+  previewTitle: document.getElementById('previewTitle'),
   results: document.getElementById('results'),
   resultsTitle: document.getElementById('resultsTitle'),
   resultsSub: document.getElementById('resultsSub'),
@@ -88,14 +91,47 @@ function addPhotoPaths(paths) {
   state.faces = [];
   state.clusters = [];
   state.noFace = [];
-  el.results.hidden = true;
   updatePhotoCount();
+  renderPreview();
+  updateView();
   refreshButtons();
 }
 
 function updatePhotoCount() {
   el.photoCount.textContent = `사진 ${state.photos.length}장`;
-  el.dropzone.hidden = state.photos.length > 0 && (state.analyzed || false);
+}
+
+// Decide which of the three panels is visible:
+//  - no photos            -> drop hint
+//  - photos, not analyzed -> loaded-photo preview
+//  - analyzed             -> results
+function updateView() {
+  const hasPhotos = state.photos.length > 0;
+  el.dropzone.hidden = hasPhotos;
+  el.preview.hidden = !hasPhotos || state.analyzed;
+  el.results.hidden = !state.analyzed;
+}
+
+// Show a thumbnail for every loaded photo so the user can confirm the import
+// worked. Capped so a huge import doesn't create thousands of <img> nodes.
+const PREVIEW_CAP = 60;
+function renderPreview() {
+  el.previewTitle.textContent = `불러온 사진 ${state.photos.length}장`;
+  el.previewGrid.innerHTML = '';
+  const shown = state.photos.slice(0, PREVIEW_CAP);
+  for (const photo of shown) {
+    const img = document.createElement('img');
+    img.alt = photo.name;
+    img.title = photo.name;
+    getImage(photo.path).then((url) => { if (url) img.src = url; });
+    el.previewGrid.appendChild(img);
+  }
+  if (state.photos.length > shown.length) {
+    const more = document.createElement('div');
+    more.className = 'more';
+    more.textContent = `+${state.photos.length - shown.length}장 더`;
+    el.previewGrid.appendChild(more);
+  }
 }
 
 function refreshButtons() {
@@ -132,8 +168,12 @@ function toCanvas(img) {
   return canvas;
 }
 
-// Crop a square face thumbnail from the canvas given a face box.
-function cropFace(canvas, box, size = 112) {
+// Crop a square face thumbnail AND score its sharpness. The sharpness score
+// (variance of the Laplacian) is high for crisp, in-focus faces and low for
+// blurry/soft ones — we use it to pick the best-looking representative face
+// for each person. `area` (face box area) is returned too so ties can prefer
+// bigger, closer faces.
+function faceCropAndSharpness(canvas, box, size = 112) {
   const pad = box.width * 0.2;
   const x = Math.max(0, box.x - pad);
   const y = Math.max(0, box.y - pad);
@@ -142,8 +182,31 @@ function cropFace(canvas, box, size = 112) {
   const out = document.createElement('canvas');
   out.width = size;
   out.height = size;
-  out.getContext('2d').drawImage(canvas, x, y, w, h, 0, 0, size, size);
-  return out.toDataURL('image/jpeg', 0.8);
+  const ctx = out.getContext('2d');
+  ctx.drawImage(canvas, x, y, w, h, 0, 0, size, size);
+  const crop = out.toDataURL('image/jpeg', 0.85);
+
+  // Grayscale, then 3x3 Laplacian; variance of the response = sharpness.
+  const { data } = ctx.getImageData(0, 0, size, size);
+  const gray = new Float32Array(size * size);
+  for (let i = 0; i < size * size; i++) {
+    gray[i] = 0.299 * data[i * 4] + 0.587 * data[i * 4 + 1] + 0.114 * data[i * 4 + 2];
+  }
+  let sum = 0;
+  let sum2 = 0;
+  let n = 0;
+  for (let yy = 1; yy < size - 1; yy++) {
+    for (let xx = 1; xx < size - 1; xx++) {
+      const i = yy * size + xx;
+      const lap = 4 * gray[i] - gray[i - 1] - gray[i + 1] - gray[i - size] - gray[i + size];
+      sum += lap;
+      sum2 += lap * lap;
+      n++;
+    }
+  }
+  const mean = sum / n;
+  const sharpness = sum2 / n - mean * mean;
+  return { crop, sharpness, area: box.width * box.height };
 }
 
 // ---------------------------------------------------------------------------
@@ -176,10 +239,13 @@ async function analyze() {
         continue;
       }
       for (const d of detections) {
+        const { crop, sharpness, area } = faceCropAndSharpness(canvas, d.detection.box);
         state.faces.push({
           photoPath: photo.path,
           descriptor: d.descriptor,
-          crop: cropFace(canvas, d.detection.box),
+          crop,
+          sharpness,
+          area,
         });
       }
     } catch (e) {
@@ -212,7 +278,13 @@ async function analyze() {
 // linkage here avoids "chaining" two different people together through one
 // ambiguous face.
 function clusterFaces(faces, threshold) {
-  const clusters = []; // { descriptors: Float32Array[], paths: Set, crop }
+  // Each cluster tracks its representative face = the sharpest one seen so far
+  // (ties broken by larger face area). `best` holds that face's crop + score.
+  const clusters = []; // { descriptors, paths, crop, bestSharp, bestArea }
+
+  const isBetterRep = (face, c) =>
+    face.sharpness > c.bestSharp ||
+    (face.sharpness === c.bestSharp && face.area > c.bestArea);
 
   // Stage 1
   for (const face of faces) {
@@ -230,11 +302,18 @@ function clusterFaces(faces, threshold) {
     if (best && bestDist < threshold) {
       best.descriptors.push(face.descriptor);
       best.paths.add(face.photoPath);
+      if (isBetterRep(face, best)) {
+        best.crop = face.crop;
+        best.bestSharp = face.sharpness;
+        best.bestArea = face.area;
+      }
     } else {
       clusters.push({
         descriptors: [face.descriptor],
         paths: new Set([face.photoPath]),
         crop: face.crop,
+        bestSharp: face.sharpness,
+        bestArea: face.area,
       });
     }
   }
@@ -246,12 +325,16 @@ function clusterFaces(faces, threshold) {
     for (let i = 0; i < clusters.length && !merged; i++) {
       for (let j = i + 1; j < clusters.length; j++) {
         if (avgDistance(clusters[i].descriptors, clusters[j].descriptors) < threshold) {
-          // Keep the larger cluster's representative face for the avatar.
-          if (clusters[j].descriptors.length > clusters[i].descriptors.length) {
-            clusters[i].crop = clusters[j].crop;
+          const a = clusters[i];
+          const b = clusters[j];
+          // Keep whichever cluster held the sharper representative face.
+          if (b.bestSharp > a.bestSharp) {
+            a.crop = b.crop;
+            a.bestSharp = b.bestSharp;
+            a.bestArea = b.bestArea;
           }
-          clusters[i].descriptors.push(...clusters[j].descriptors);
-          clusters[j].paths.forEach((p) => clusters[i].paths.add(p));
+          a.descriptors.push(...b.descriptors);
+          b.paths.forEach((p) => a.paths.add(p));
           clusters.splice(j, 1);
           merged = true;
           break;
@@ -305,8 +388,7 @@ function recluster() {
 // Rendering
 // ---------------------------------------------------------------------------
 function renderResults() {
-  el.dropzone.hidden = true;
-  el.results.hidden = false;
+  updateView();
   el.grid.innerHTML = '';
 
   const totalPeople = state.clusters.length;
@@ -481,10 +563,9 @@ el.btnClear.addEventListener('click', () => {
   state.clusters = [];
   state.noFace = [];
   state.analyzed = false;
-  el.results.hidden = true;
-  el.dropzone.hidden = false;
   el.progressWrap.hidden = true;
   updatePhotoCount();
+  updateView();
   refreshButtons();
 });
 
@@ -501,14 +582,19 @@ el.thSlider.addEventListener('input', () => {
   reclusterTimer = setTimeout(recluster, 180);
 });
 
-// Drag & drop
+// Drag & drop — accept photos dropped anywhere in the window, not just on the
+// initial drop hint (which gets replaced by the preview once photos load).
 ['dragenter', 'dragover'].forEach((ev) =>
-  el.dropzone.addEventListener(ev, (e) => { e.preventDefault(); el.dropzone.classList.add('dragover'); })
+  document.addEventListener(ev, (e) => { e.preventDefault(); document.body.classList.add('dragover'); })
 );
 ['dragleave', 'drop'].forEach((ev) =>
-  el.dropzone.addEventListener(ev, (e) => { e.preventDefault(); el.dropzone.classList.remove('dragover'); })
+  document.addEventListener(ev, (e) => {
+    e.preventDefault();
+    // Only clear the highlight when the cursor actually leaves the window.
+    if (ev === 'drop' || !e.relatedTarget) document.body.classList.remove('dragover');
+  })
 );
-el.dropzone.addEventListener('drop', (e) => {
+document.addEventListener('drop', (e) => {
   if (!state.modelsReady) return;
   const paths = [];
   for (const f of e.dataTransfer.files) {
