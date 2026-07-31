@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PhotoSorter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">📸</span>
+      <div>
+        <h1>PhotoSorter</h1>
+        <p class="tagline">행사 사진을 인물별로 자동 분류</p>
+      </div>
+    </div>
+    <div class="status" id="modelStatus">모델 로딩 중…</div>
+  </header>
+
+  <main>
+    <!-- Step controls -->
+    <section class="controls">
+      <div class="btn-group">
+        <button id="btnAddPhotos" class="btn" disabled>＋ 사진 추가</button>
+        <button id="btnAddFolder" class="btn" disabled>📁 폴더 열기</button>
+        <span id="photoCount" class="count">사진 0장</span>
+        <button id="btnClear" class="btn ghost" disabled>비우기</button>
+      </div>
+      <div class="btn-group">
+        <button id="btnAnalyze" class="btn primary" disabled>🔍 분석 시작</button>
+        <button id="btnExport" class="btn success" disabled>💾 폴더로 내보내기</button>
+      </div>
+    </section>
+
+    <!-- Progress -->
+    <section class="progress-wrap" id="progressWrap" hidden>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-text" id="progressText"></div>
+    </section>
+
+    <!-- Empty / drop hint -->
+    <section class="dropzone" id="dropzone">
+      <div class="drop-inner">
+        <div class="drop-icon">🖼️</div>
+        <p><strong>사진을 여기로 끌어다 놓거나</strong> 위의 버튼으로 추가하세요.</p>
+        <p class="muted">여러 명이 찍힌 여러 장의 사진을 넣으면, 같은 사람끼리 자동으로 묶어줍니다.</p>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="results" hidden>
+      <div class="results-head">
+        <h2 id="resultsTitle">분류 결과</h2>
+        <p class="muted" id="resultsSub"></p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <script src="vendor/face-api.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

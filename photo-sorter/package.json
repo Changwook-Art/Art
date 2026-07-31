@@ -1,0 +1,29 @@
+{
+  "name": "photo-sorter",
+  "version": "1.0.0",
+  "description": "행사 사진을 얼굴 인식으로 인물별 폴더로 자동 분류하는 데스크톱 앱",
+  "main": "main.js",
+  "author": "Changwook-Art",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.changwook.photosorter",
+    "productName": "PhotoSorter",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "models/**/*"
+    ],
+    "mac": { "target": "dmg" },
+    "win": { "target": "nsis" },
+    "linux": { "target": "AppImage" }
+  }
+}
