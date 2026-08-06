@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-08-06T00:00:00Z",
+  "sample": true,
+  "source": "SAMPLE DATA — 자동 업데이트 실행 전 예시입니다",
+  "topics": [
+    { "code": "ENV", "en": "Environment", "ko": "환경" },
+    { "code": "CLIMA", "en": "Climate action", "ko": "기후변화 대응" },
+    { "code": "ENER", "en": "Energy", "ko": "에너지" }
+  ],
+  "failedTopics": [],
+  "counts": { "total": 6, "open": 4 },
+  "initiatives": [
+    {
+      "id": "sample-1",
+      "title": "(샘플) Circular economy — revision of ecodesign requirements for electronics",
+      "reference": "SAMPLE-ENV-001",
+      "actType": "Implementing regulation",
+      "stage": "OPEN_PUBLIC_CONSULTATION",
+      "topics": ["Environment"],
+      "topicCodes": ["ENV"],
+      "published": "2026-07-10T00:00:00Z",
+      "feedbackStart": "2026-07-10T00:00:00Z",
+      "feedbackEnd": "2026-08-09T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    },
+    {
+      "id": "sample-2",
+      "title": "(샘플) EU climate target for 2040 — amendment to the European Climate Law",
+      "reference": "SAMPLE-CLIMA-002",
+      "actType": "Proposal for a regulation",
+      "stage": "CALL_FOR_EVIDENCE",
+      "topics": ["Climate action"],
+      "topicCodes": ["CLIMA"],
+      "published": "2026-07-20T00:00:00Z",
+      "feedbackStart": "2026-07-20T00:00:00Z",
+      "feedbackEnd": "2026-08-18T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    },
+    {
+      "id": "sample-3",
+      "title": "(샘플) Energy efficiency labelling for heat pumps — update of technical standards",
+      "reference": "SAMPLE-ENER-003",
+      "actType": "Delegated regulation",
+      "stage": "DRAFT_ACT",
+      "topics": ["Energy"],
+      "topicCodes": ["ENER"],
+      "published": "2026-07-28T00:00:00Z",
+      "feedbackStart": "2026-07-28T00:00:00Z",
+      "feedbackEnd": "2026-08-25T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    },
+    {
+      "id": "sample-4",
+      "title": "(샘플) Water resilience strategy — stakeholder consultation on reuse standards",
+      "reference": "SAMPLE-ENV-004",
+      "actType": "Communication",
+      "stage": "OPEN_PUBLIC_CONSULTATION",
+      "topics": ["Environment"],
+      "topicCodes": ["ENV", "CLIMA"],
+      "published": "2026-06-30T00:00:00Z",
+      "feedbackStart": "2026-06-30T00:00:00Z",
+      "feedbackEnd": "2026-09-15T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    },
+    {
+      "id": "sample-5",
+      "title": "(샘플) Carbon Border Adjustment Mechanism — implementing rules for importers",
+      "reference": "SAMPLE-CLIMA-005",
+      "actType": "Implementing regulation",
+      "stage": "ADOPTED",
+      "topics": ["Climate action"],
+      "topicCodes": ["CLIMA"],
+      "published": "2026-06-01T00:00:00Z",
+      "feedbackStart": "2026-05-01T00:00:00Z",
+      "feedbackEnd": "2026-06-01T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    },
+    {
+      "id": "sample-6",
+      "title": "(샘플) Renewable hydrogen certification — additionality requirements review",
+      "reference": "SAMPLE-ENER-006",
+      "actType": "Delegated regulation",
+      "stage": "ROADMAP",
+      "topics": ["Energy"],
+      "topicCodes": ["ENER"],
+      "published": "2026-05-15T00:00:00Z",
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives_en"
+    }
+  ]
+}
