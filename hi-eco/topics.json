@@ -1,0 +1,21 @@
+{
+  "comment": "EU Have Your Say에서 추적할 주제 목록. active를 true/false로 바꾸면 다음 자동 업데이트부터 반영됩니다. code는 have-your-say 포털의 topic 파라미터 값입니다.",
+  "topics": [
+    { "code": "ENV",       "en": "Environment",                  "ko": "환경",             "active": true },
+    { "code": "CLIMA",     "en": "Climate action",               "ko": "기후변화 대응",     "active": true },
+    { "code": "ENER",      "en": "Energy",                       "ko": "에너지",           "active": true },
+    { "code": "TRANSP",    "en": "Transport",                    "ko": "교통·운송",        "active": false },
+    { "code": "FOOD",      "en": "Food safety",                  "ko": "식품 안전",        "active": false },
+    { "code": "AGRI",      "en": "Agriculture and rural development", "ko": "농업·농촌",   "active": false },
+    { "code": "MARE",      "en": "Maritime affairs and fisheries", "ko": "해양·수산",      "active": false },
+    { "code": "PUBHEALTH", "en": "Public health",                "ko": "공중보건",         "active": false },
+    { "code": "TRADE",     "en": "Trade",                        "ko": "통상",             "active": false },
+    { "code": "TAX",       "en": "Taxation",                     "ko": "조세",             "active": false },
+    { "code": "DIGITAL",   "en": "Digital economy and society",  "ko": "디지털",           "active": false },
+    { "code": "COMP",      "en": "Competition",                  "ko": "경쟁",             "active": false },
+    { "code": "CONSUM",    "en": "Consumers",                    "ko": "소비자",           "active": false },
+    { "code": "INTMARKET", "en": "Single market",                "ko": "단일시장",         "active": false },
+    { "code": "RESEARCH",  "en": "Research and innovation",      "ko": "연구·혁신",        "active": false },
+    { "code": "EMPL",      "en": "Employment and social affairs", "ko": "고용·사회",       "active": false }
+  ]
+}

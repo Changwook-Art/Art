@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi eco — EU 규제 의견수렴 대시보드</title>
+    <meta name="description" content="EU Have Your Say 최신 의견수렴(공공 협의) 동향을 한눈에 모아보는 대시보드">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div>
+                <h1>🌿 hi eco</h1>
+                <p class="subtitle">EU 규제 의견수렴 대시보드 — <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say_en" target="_blank" rel="noopener">Have Your Say</a> 최신 동향을 한 페이지에서</p>
+            </div>
+            <nav class="site-nav">
+                <a href="../index.html">ESG Stock Tracker ↗</a>
+            </nav>
+        </header>
+
+        <div id="sample-notice" class="notice hidden">
+            ⚠️ 지금 표시된 것은 <strong>샘플 데이터</strong>입니다. GitHub Actions 자동 업데이트가 처음 실행되면 실제 데이터로 교체됩니다.
+        </div>
+        <div id="error-notice" class="notice notice-error hidden">
+            ❌ 데이터를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.
+        </div>
+
+        <section class="stats-row" aria-label="요약 통계">
+            <div class="stat-tile">
+                <span class="stat-label">의견수렴 진행 중</span>
+                <span class="stat-value" id="stat-open">–</span>
+            </div>
+            <div class="stat-tile">
+                <span class="stat-label">7일 내 마감</span>
+                <span class="stat-value" id="stat-closing">–</span>
+            </div>
+            <div class="stat-tile">
+                <span class="stat-label">추적 항목 전체</span>
+                <span class="stat-value" id="stat-total">–</span>
+            </div>
+            <div class="stat-tile">
+                <span class="stat-label">마지막 업데이트</span>
+                <span class="stat-value stat-value-sm" id="stat-updated">–</span>
+            </div>
+        </section>
+
+        <section class="filters" aria-label="필터">
+            <div class="topic-chips" id="topic-chips"></div>
+            <div class="filter-row">
+                <input type="search" id="search-input" placeholder="제목·참조번호 검색…" aria-label="검색">
+                <select id="status-filter" aria-label="상태 필터">
+                    <option value="all">전체 상태</option>
+                    <option value="open" selected>의견수렴 진행 중</option>
+                    <option value="closing">마감 임박 (7일)</option>
+                    <option value="closed">종료·기타</option>
+                </select>
+                <select id="sort-select" aria-label="정렬">
+                    <option value="deadline">마감 임박순</option>
+                    <option value="published">최신 공개순</option>
+                </select>
+            </div>
+        </section>
+
+        <p class="result-count" id="result-count"></p>
+        <section id="card-list" class="card-list" aria-live="polite"></section>
+
+        <footer class="site-footer">
+            <p>데이터 출처: <a href="https://ec.europa.eu/info/law/better-regulation/have-your-say_en" target="_blank" rel="noopener">European Commission — Have Your Say</a> 공개 API · 매일 자동 갱신</p>
+            <p>🌿 hi eco · <a href="https://github.com/Changwook-Art/Art" target="_blank" rel="noopener">GitHub</a> · 추적 주제는 <code>hi-eco/topics.json</code>에서 변경할 수 있습니다</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

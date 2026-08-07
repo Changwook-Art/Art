@@ -1,3 +1,19 @@
+# 🌿 hi eco
+
+EU **Have Your Say** 의견수렴(공공 협의) 최신 동향을 한 페이지에서 모아보는 대시보드입니다.
+메일 알림을 한 건씩 열어보는 대신, 관심 주제의 진행 중인 의견수렴과 마감 일정을 한눈에 확인할 수 있습니다.
+
+- **페이지**: [`hi-eco/index.html`](hi-eco/index.html) — GitHub Pages 배포 시 `https://changwook-art.github.io/Art/hi-eco/`
+- **데이터**: `hi-eco/data/initiatives.json` — GitHub Actions가 **매일 05:00 UTC(한국시간 14:00)** 에 EU 집행위 공개 API에서 자동 수집·커밋
+- **주제 설정**: [`hi-eco/topics.json`](hi-eco/topics.json)에서 `active: true/false`로 추적 주제 변경 (기본: 환경, 기후변화 대응, 에너지)
+- **수동 갱신**: GitHub → Actions → *Update EU consultations data* → **Run workflow**
+
+기능: 진행 중/마감 임박(D-7) 상태 배지와 D-day, 주제·상태·키워드 필터, 마감 임박순/최신 공개순 정렬, 각 항목에서 Have Your Say 의견 제출 페이지로 바로 이동, 라이트/다크 모드.
+
+> 참고: 예약 실행(cron)은 기본 브랜치(main)에 병합된 뒤부터 동작합니다.
+
+---
+
 # 🌱 ESG Stock Tracker
 
 A web application to track Environmental, Social, and Governance (ESG) performance of US stocks.
