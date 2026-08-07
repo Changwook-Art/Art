@@ -175,29 +175,94 @@ function normalizeItem(item, topicCode) {
   };
 }
 
-async function fetchTopic(code) {
-  const items = new Map();
-  const pageUrl = (page) =>
-    `${API_BASE}?topic=${encodeURIComponent(code)}&size=${PAGE_SIZE}&page=${page}&language=EN`;
+// 주제 필터 파라미터 이름이 확실치 않으므로 여러 형식을 순서대로 시도한다.
+const TOPIC_QUERY_VARIANTS = [
+  (code, page) => `${API_BASE}?topic=${encodeURIComponent(code)}&size=${PAGE_SIZE}&page=${page}&language=EN`,
+  (code, page) => `${API_BASE}?text=&topic=${encodeURIComponent(code)}&size=${PAGE_SIZE}&page=${page}&language=EN`,
+  (code, page) => `${API_BASE}?topics=${encodeURIComponent(code)}&size=${PAGE_SIZE}&page=${page}&language=EN`,
+];
+const GLOBAL_QUERY_VARIANTS = [
+  (page) => `${API_BASE}?size=${PAGE_SIZE}&page=${page}&language=EN`,
+  (page) => `${API_BASE}?text=&size=${PAGE_SIZE}&page=${page}&language=EN`,
+];
 
-  const first = await fetchJson(pageUrl(0));
-  if (DEBUG) {
-    const sample = extractItems(first)[0];
-    log(`raw sample for ${code}:`, JSON.stringify(sample)?.slice(0, 2000));
-  }
-  const totalPages = Number(first?.page?.totalPages ?? 1);
+function pagesToFetch(totalPages, head, tail) {
   const pages = new Set([0]);
-  for (let p = 1; p < Math.min(HEAD_PAGES, totalPages); p++) pages.add(p);
-  for (let p = Math.max(0, totalPages - TAIL_PAGES); p < totalPages; p++) pages.add(p);
+  for (let p = 1; p < Math.min(head, totalPages); p++) pages.add(p);
+  for (let p = Math.max(0, totalPages - tail); p < totalPages; p++) pages.add(p);
+  return [...pages].sort((a, b) => a - b);
+}
 
-  for (const page of [...pages].sort((a, b) => a - b)) {
+async function collectPages(pageUrl, head, tail, collect) {
+  const first = await fetchJson(pageUrl(0));
+  const firstItems = extractItems(first);
+  if (firstItems.length === 0) {
+    // 0건이면 원인 파악을 위해 실제 응답을 로그로 남긴다.
+    log(`empty response from ${pageUrl(0)}`);
+    log(`raw body (truncated): ${JSON.stringify(first)?.slice(0, 1500)}`);
+    return 0;
+  }
+  if (DEBUG) log(`raw sample:`, JSON.stringify(firstItems[0])?.slice(0, 2000));
+  const totalPages = Number(first?.page?.totalPages ?? 1);
+  let count = 0;
+  for (const page of pagesToFetch(totalPages, head, tail)) {
     const json = page === 0 ? first : await fetchJson(pageUrl(page));
     for (const raw of extractItems(json)) {
-      const item = normalizeItem(raw, code);
-      if (item) items.set(item.id, item);
+      collect(raw);
+      count++;
     }
   }
-  log(`${code}: ${items.size} items (totalPages=${totalPages})`);
+  return count;
+}
+
+/** 주제 필터 쿼리로 수집. 모든 형식이 0건이면 null 반환(전체 수집 폴백 필요). */
+async function fetchTopic(code) {
+  for (const variant of TOPIC_QUERY_VARIANTS) {
+    const items = new Map();
+    const got = await collectPages(
+      (page) => variant(code, page),
+      HEAD_PAGES,
+      TAIL_PAGES,
+      (raw) => {
+        const item = normalizeItem(raw, code);
+        if (item) items.set(item.id, item);
+      }
+    );
+    if (got > 0) {
+      log(`${code}: ${items.size} items`);
+      return [...items.values()];
+    }
+  }
+  log(`${code}: all topic-filtered queries returned 0 items`);
+  return null;
+}
+
+/**
+ * 폴백: 주제 필터 없이 전체 목록을 받아, 각 항목의 topics 라벨을
+ * 활성 주제의 영어 이름과 대조해 직접 분류한다.
+ */
+async function fetchAllAndClassify(topics) {
+  const labelToCode = new Map(topics.map((t) => [t.en.toLowerCase(), t.code]));
+  const items = new Map();
+  for (const variant of GLOBAL_QUERY_VARIANTS) {
+    const got = await collectPages(variant, HEAD_PAGES * 2, TAIL_PAGES * 2, (raw) => {
+      const codes = normalizeTopics(raw?.topics)
+        .map((label) => labelToCode.get(String(label).toLowerCase()))
+        .filter(Boolean);
+      if (codes.length === 0) return;
+      const item = normalizeItem(raw, codes[0]);
+      if (!item) return;
+      item.topicCodes = codes;
+      const existing = items.get(item.id);
+      if (existing) {
+        existing.topicCodes = [...new Set([...existing.topicCodes, ...codes])];
+      } else {
+        items.set(item.id, item);
+      }
+    });
+    if (got > 0) break;
+  }
+  log(`fallback (unfiltered fetch): ${items.size} items matched active topics`);
   return [...items.values()];
 }
 
@@ -218,19 +283,36 @@ async function main() {
 
   const merged = new Map();
   const failures = [];
+  const mergeItem = (item) => {
+    const existing = merged.get(item.id);
+    if (existing) {
+      existing.topicCodes = [...new Set([...existing.topicCodes, ...item.topicCodes])];
+    } else {
+      merged.set(item.id, item);
+    }
+  };
+
+  let needFallback = false;
   for (const topic of active) {
     try {
-      for (const item of await fetchTopic(topic.code)) {
-        const existing = merged.get(item.id);
-        if (existing) {
-          existing.topicCodes = [...new Set([...existing.topicCodes, ...item.topicCodes])];
-        } else {
-          merged.set(item.id, item);
-        }
+      const items = await fetchTopic(topic.code);
+      if (items === null) {
+        needFallback = true;
+      } else {
+        items.forEach(mergeItem);
       }
     } catch (err) {
       failures.push(topic.code);
       console.error(`Failed to fetch topic ${topic.code}: ${err.message}`);
+    }
+  }
+
+  // 주제 필터 쿼리가 통하지 않으면 전체 목록을 받아 직접 분류한다.
+  if (needFallback) {
+    try {
+      (await fetchAllAndClassify(active)).forEach(mergeItem);
+    } catch (err) {
+      console.error(`Fallback fetch failed: ${err.message}`);
     }
   }
 
