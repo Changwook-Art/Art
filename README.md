@@ -14,6 +14,16 @@ EU **Have Your Say** 의견수렴(공공 협의) 최신 동향을 한 페이지�
 
 ---
 
+# 🔬 규제 시험·검사기관 탐색 (reg-lab-finder)
+
+특정 제품에 적용되는 규제를 분석하고, 규제 → 요구사항 → 시험·검사 항목 → 시험표준 → 기관 자격 → 인정 Scope 순으로 검증하여 실제 수행 가능한 시험·검사·인증기관을 근거와 함께 추천하는 Claude Code 스킬입니다.
+
+- **위치**: [`.claude/skills/reg-lab-finder/SKILL.md`](.claude/skills/reg-lab-finder/SKILL.md)
+- **사용법**: 이 저장소에서 Claude Code 세션을 열고 `/reg-lab-finder`를 입력하거나, 제품 정보와 함께 시험·인증기관 탐색을 요청하면 자동으로 적용됩니다.
+- **특징**: ISO/IEC 17025·KOLAS·Notified Body 등 기관 자격과 공식 인정 Scope를 근거로 검증하며, 모든 판단을 확인/부분확인/미확인 및 FACT/INTERPRETATION/ASSUMPTION/UNVERIFIED로 구분해 제시합니다.
+
+---
+
 # 🌱 ESG Stock Tracker
 
 A web application to track Environmental, Social, and Governance (ESG) performance of US stocks.
