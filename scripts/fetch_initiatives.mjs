@@ -57,17 +57,30 @@ async function fetchJson(url, attempt = 1) {
   }
 }
 
-/** 응답에서 initiative 배열을 찾는다 (_embedded 아래 키 이름이 바뀌어도 동작). */
-function extractItems(json) {
-  if (Array.isArray(json)) return json;
-  if (Array.isArray(json?.content)) return json.content;
-  const embedded = json?._embedded;
+/**
+ * 응답에서 initiative 배열이 든 페이지 객체를 찾는다.
+ * 실제 응답은 { initiativeResultDtoPage: { content: [...], totalPages } } 구조이며,
+ * 이 래퍼 키 이름이 바뀌어도 content 배열을 가진 객체를 찾아내도록 방어적으로 탐색한다.
+ */
+function extractPage(json) {
+  if (Array.isArray(json)) return { content: json };
+  if (json == null || typeof json !== "object") return { content: [] };
+  if (Array.isArray(json.content)) return json;
+  if (Array.isArray(json.initiativeResultDtoPage?.content)) return json.initiativeResultDtoPage;
+  const embedded = json._embedded;
   if (embedded && typeof embedded === "object") {
     for (const value of Object.values(embedded)) {
-      if (Array.isArray(value)) return value;
+      if (Array.isArray(value)) return { content: value, ...json.page };
     }
   }
-  return [];
+  for (const value of Object.values(json)) {
+    if (value && typeof value === "object" && Array.isArray(value.content)) return value;
+  }
+  return { content: [] };
+}
+
+function extractItems(json) {
+  return extractPage(json).content;
 }
 
 function firstString(...candidates) {
@@ -195,15 +208,15 @@ function pagesToFetch(totalPages, head, tail) {
 
 async function collectPages(pageUrl, head, tail, collect) {
   const first = await fetchJson(pageUrl(0));
-  const firstItems = extractItems(first);
-  if (firstItems.length === 0) {
+  const firstPage = extractPage(first);
+  if (firstPage.content.length === 0) {
     // 0건이면 원인 파악을 위해 실제 응답을 로그로 남긴다.
     log(`empty response from ${pageUrl(0)}`);
     log(`raw body (truncated): ${JSON.stringify(first)?.slice(0, 1500)}`);
     return 0;
   }
-  if (DEBUG) log(`raw sample:`, JSON.stringify(firstItems[0])?.slice(0, 2000));
-  const totalPages = Number(first?.page?.totalPages ?? 1);
+  if (DEBUG) log(`raw sample:`, JSON.stringify(firstPage.content[0])?.slice(0, 2000));
+  const totalPages = Number(firstPage.totalPages ?? first?.page?.totalPages ?? 1);
   let count = 0;
   for (const page of pagesToFetch(totalPages, head, tail)) {
     const json = page === 0 ? first : await fetchJson(pageUrl(page));
