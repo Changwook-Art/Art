@@ -30,6 +30,7 @@
             <button class="tab" role="tab" data-tab="library" aria-selected="false">2. 규제·시험 라이브러리</button>
             <button class="tab" role="tab" data-tab="orgs" aria-selected="false">3. 기관 디렉터리</button>
             <button class="tab" role="tab" data-tab="mapping" aria-selected="false">4. 조사 매핑표</button>
+            <button class="tab" role="tab" data-tab="reports" aria-selected="false">5. 조사 리포트</button>
         </nav>
 
         <!-- ===== 탭 1: 제품 분석 ===== -->
@@ -155,6 +156,17 @@
             </div>
         </section>
 
+        <!-- ===== 탭 5: 조사 리포트 ===== -->
+        <section id="panel-reports" class="tab-panel hidden" role="tabpanel">
+            <h2 class="panel-title">조사 리포트</h2>
+            <p class="panel-desc">
+                Claude Code에서 <code>/reg-lab-finder</code> 조사를 수행하면 결과가 이곳에 리포트로 쌓입니다.
+                (조사 후 Claude가 <code>reg-lab-finder/reports.js</code>에 결과를 커밋 — 병합되면 자동 표시)
+            </p>
+            <div id="report-list" class="card-list"></div>
+            <div id="report-detail" class="hidden"></div>
+        </section>
+
         <footer class="site-footer">
             <p>본 대시보드는 참고용이며 법적 자문이 아닙니다 · 최종 판단은 규제 원문과 공식 인정 Scope 기준 · 데이터 기준일: <span id="footer-updated"></span></p>
             <p>🔬 reg-lab-finder · <a href="https://github.com/Changwook-Art/Art" target="_blank" rel="noopener">GitHub</a> · 조사 방법론: <code>.claude/skills/reg-lab-finder/SKILL.md</code></p>
@@ -162,6 +174,7 @@
     </div>
 
     <script src="data.js"></script>
+    <script src="reports.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
