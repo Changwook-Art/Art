@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg-lab-finder — 규제 시험·검사기관 탐색 대시보드</title>
+    <meta name="description" content="제품 규제 요구사항을 시험·검사 항목으로 분해하고, 수행 가능한 시험·검사·인증기관을 근거와 함께 탐색·기록하는 대시보드">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div>
+                <h1>🔬 reg-lab-finder</h1>
+                <p class="subtitle">규제 → 요구사항 → 시험·검사 → 시험표준 → 기관 자격 → 인정 Scope — 순서대로 검증하는 시험·검사기관 탐색 대시보드</p>
+            </div>
+            <nav class="site-nav">
+                <a href="../hi-eco/index.html">hi eco ↗</a>
+                <a href="../index.html">ESG Tracker ↗</a>
+            </nav>
+        </header>
+
+        <div class="notice">
+            ⚠️ 이 대시보드의 규제·기관 정보는 <strong>조사 출발점용 참고자료(INTERPRETATION)</strong>입니다.
+            시험 의뢰 전 반드시 규제 원문과 기관의 <strong>공식 인정 Scope</strong>(KOLAS·NANDO 등 A등급 출처)를 확인하세요.
+        </div>
+
+        <nav class="tabs" role="tablist" aria-label="대시보드 탭">
+            <button class="tab" role="tab" data-tab="analyze" aria-selected="true">1. 제품 분석</button>
+            <button class="tab" role="tab" data-tab="library" aria-selected="false">2. 규제·시험 라이브러리</button>
+            <button class="tab" role="tab" data-tab="orgs" aria-selected="false">3. 기관 디렉터리</button>
+            <button class="tab" role="tab" data-tab="mapping" aria-selected="false">4. 조사 매핑표</button>
+        </nav>
+
+        <!-- ===== 탭 1: 제품 분석 ===== -->
+        <section id="panel-analyze" class="tab-panel" role="tabpanel">
+            <h2 class="panel-title">STEP 1 — 제품 정의</h2>
+            <p class="panel-desc">제품 정보를 입력하면 적용 가능성이 있는 규제를 표시하고, 심층 조사용 Claude 프롬프트를 생성합니다. 입력값은 브라우저에만 저장됩니다.</p>
+
+            <form id="product-form" class="product-form">
+                <div class="form-grid">
+                    <label>제품명
+                        <input type="text" id="f-name" placeholder="예: 블루투스 스피커">
+                    </label>
+                    <label>제품 설명
+                        <input type="text" id="f-desc" placeholder="주요 기능, 소재, 정격전압 등">
+                    </label>
+                </div>
+                <fieldset class="form-fieldset">
+                    <legend>대상 시장</legend>
+                    <div id="f-markets" class="check-chips"></div>
+                </fieldset>
+                <fieldset class="form-fieldset">
+                    <legend>제품 특성</legend>
+                    <div id="f-flags" class="check-chips"></div>
+                </fieldset>
+                <div class="form-grid">
+                    <label>특히 확인하고 싶은 요구사항
+                        <input type="text" id="f-focus" placeholder="예: RoHS 유해물질, 무선인증">
+                    </label>
+                    <label>기타 조건
+                        <input type="text" id="f-etc" placeholder="예: 국내기관 우선, 납기 조건">
+                    </label>
+                </div>
+            </form>
+
+            <h2 class="panel-title">STEP 2 — 적용 가능성 있는 규제</h2>
+            <p class="panel-desc">입력한 시장·제품 특성 기반의 <strong>규칙 매칭 결과</strong>입니다 (ASSUMPTION — 적용 여부 최종 판단은 규제 원문 기준).</p>
+            <div id="matched-regs" class="matched-regs"></div>
+
+            <h2 class="panel-title">심층 조사 프롬프트 생성</h2>
+            <p class="panel-desc">아래 프롬프트를 복사해 Claude(스킬 <code>/reg-lab-finder</code>가 있는 이 저장소 세션)에 붙여넣으면, 인정 Scope 검증까지 포함한 전체 조사가 수행됩니다.</p>
+            <div class="prompt-box">
+                <textarea id="prompt-output" readonly rows="14" aria-label="생성된 조사 프롬프트"></textarea>
+                <button type="button" id="copy-prompt" class="btn btn-primary">📋 프롬프트 복사</button>
+            </div>
+        </section>
+
+        <!-- ===== 탭 2: 규제·시험 라이브러리 ===== -->
+        <section id="panel-library" class="tab-panel hidden" role="tabpanel">
+            <h2 class="panel-title">규제별 요구사항 → 시험·검사 → 표준 매핑</h2>
+            <p class="panel-desc">각 규제의 요구사항을 시험·검사 관점으로 분해한 참고 라이브러리입니다. 링크는 법령 원문 등 A등급 출처입니다.</p>
+            <div class="filter-row">
+                <div id="lib-market-chips" class="topic-chips"></div>
+                <input type="search" id="lib-search" placeholder="규제명·표준번호 검색…" aria-label="라이브러리 검색">
+            </div>
+            <div id="reg-cards" class="card-list"></div>
+        </section>
+
+        <!-- ===== 탭 3: 기관 디렉터리 ===== -->
+        <section id="panel-orgs" class="tab-panel hidden" role="tabpanel">
+            <h2 class="panel-title">시험·검사·인증기관 디렉터리</h2>
+            <p class="panel-desc">
+                기관에 표시된 자격은 <strong>일반 현황</strong>입니다. 특정 시험표준의 수행 가능 여부는 아래
+                <strong>공식 DB</strong>에서 해당 기관의 인정 Scope를 확인해야 「확인」 판정이 가능합니다.
+            </p>
+            <div id="org-field-chips" class="topic-chips"></div>
+            <div id="org-cards" class="card-list"></div>
+
+            <h2 class="panel-title">공식 검증 데이터베이스 (A등급 출처)</h2>
+            <div id="db-links" class="db-grid"></div>
+        </section>
+
+        <!-- ===== 탭 4: 조사 매핑표 ===== -->
+        <section id="panel-mapping" class="tab-panel hidden" role="tabpanel">
+            <h2 class="panel-title">규제 → 시험 → 기관 매핑표</h2>
+            <p class="panel-desc">
+                조사 결과를 기록하는 최종 산출물입니다. Scope 확인 수준을
+                <span class="verdict verdict-confirmed">확인</span> ·
+                <span class="verdict verdict-partial">부분확인</span> ·
+                <span class="verdict verdict-unverified">미확인</span>
+                으로 구분해 관리하세요. 데이터는 이 브라우저에만 저장됩니다.
+            </p>
+
+            <section class="stats-row" aria-label="매핑 요약">
+                <div class="stat-tile"><span class="stat-label">전체 항목</span><span class="stat-value" id="map-stat-total">0</span></div>
+                <div class="stat-tile"><span class="stat-label">확인 (Scope 검증)</span><span class="stat-value stat-confirmed" id="map-stat-confirmed">0</span></div>
+                <div class="stat-tile"><span class="stat-label">부분확인</span><span class="stat-value stat-partial" id="map-stat-partial">0</span></div>
+                <div class="stat-tile"><span class="stat-label">미확인</span><span class="stat-value stat-unverified" id="map-stat-unverified">0</span></div>
+            </section>
+
+            <form id="mapping-form" class="mapping-form">
+                <div class="mapping-grid">
+                    <input type="text" id="m-reg" placeholder="규제 (예: EU RoHS)" required>
+                    <input type="text" id="m-req" placeholder="요구사항 (예: 유해물질 제한)" required>
+                    <input type="text" id="m-test" placeholder="시험·검사 (예: 10종 정량분석)">
+                    <input type="text" id="m-std" placeholder="시험표준 (예: IEC 62321)">
+                    <input type="text" id="m-org" placeholder="기관 (예: KTR)">
+                    <select id="m-verdict" aria-label="Scope 확인 수준">
+                        <option value="unverified">미확인</option>
+                        <option value="partial">부분확인</option>
+                        <option value="confirmed">확인</option>
+                    </select>
+                    <input type="text" id="m-basis" placeholder="근거 (예: KOLAS Scope 확인일 2026-08-07)">
+                    <button type="submit" class="btn btn-primary">+ 추가</button>
+                </div>
+            </form>
+
+            <div class="table-wrap">
+                <table class="mapping-table" id="mapping-table">
+                    <thead>
+                        <tr>
+                            <th>규제</th><th>요구사항</th><th>시험·검사</th><th>시험표준</th>
+                            <th>기관</th><th>Scope 확인</th><th>근거</th><th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="mapping-body"></tbody>
+                </table>
+            </div>
+            <p id="mapping-empty" class="empty-state">아직 기록된 항목이 없습니다. 위 입력줄로 조사 결과를 추가하세요.</p>
+
+            <div class="btn-row">
+                <button type="button" id="export-csv" class="btn">⬇ CSV 내보내기</button>
+                <button type="button" id="clear-mappings" class="btn btn-danger">🗑 전체 삭제</button>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>본 대시보드는 참고용이며 법적 자문이 아닙니다 · 최종 판단은 규제 원문과 공식 인정 Scope 기준 · 데이터 기준일: <span id="footer-updated"></span></p>
+            <p>🔬 reg-lab-finder · <a href="https://github.com/Changwook-Art/Art" target="_blank" rel="noopener">GitHub</a> · 조사 방법론: <code>.claude/skills/reg-lab-finder/SKILL.md</code></p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

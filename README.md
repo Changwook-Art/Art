@@ -14,6 +14,25 @@ EU **Have Your Say** 의견수렴(공공 협의) 최신 동향을 한 페이지�
 
 ---
 
+# 🔬 규제 시험·검사기관 탐색 (reg-lab-finder)
+
+특정 제품에 적용되는 규제를 분석하고, 규제 → 요구사항 → 시험·검사 항목 → 시험표준 → 기관 자격 → 인정 Scope 순으로 검증하여 실제 수행 가능한 시험·검사·인증기관을 근거와 함께 찾는 도구 세트입니다.
+
+**① 대시보드** — [`reg-lab-finder/index.html`](reg-lab-finder/index.html) · GitHub Pages 배포 시 `https://changwook-art.github.io/Art/reg-lab-finder/`
+
+- **제품 분석**: 제품 정보·대상 시장·특성(전기전자/배터리/무선)을 입력하면 적용 가능성 있는 규제를 규칙 매칭으로 표시하고, Claude 심층 조사용 프롬프트를 자동 생성
+- **규제·시험 라이브러리**: EU(RoHS·REACH·LVD·EMC·RED·배터리규정), KC(전기안전·전파법), US FCC의 요구사항 → 시험항목 → 시험표준 → 기관 자격 매핑 (법령 원문 A등급 출처 링크 포함)
+- **기관 디렉터리**: 국내(KTL·KTC·KTR·KCL·HCT·DT&C) 및 글로벌(SGS·TÜV·Intertek·UL 등) 시험·인증기관과 KOLAS·NANDO·IECEE 등 공식 Scope 검증 DB 바로가기
+- **조사 매핑표**: 규제→시험→기관 조사 결과를 확인/부분확인/미확인 판단과 함께 기록·관리 (브라우저 저장, CSV 내보내기)
+
+**② Claude Code 스킬** — [`.claude/skills/reg-lab-finder/SKILL.md`](.claude/skills/reg-lab-finder/SKILL.md)
+
+- 이 저장소에서 Claude Code 세션을 열고 `/reg-lab-finder`를 입력하거나, 제품 정보와 함께 시험·인증기관 탐색을 요청하면 자동으로 적용됩니다.
+- ISO/IEC 17025·KOLAS·Notified Body 등 기관 자격과 공식 인정 Scope를 근거로 검증하며, 모든 판단을 확인/부분확인/미확인 및 FACT/INTERPRETATION/ASSUMPTION/UNVERIFIED로 구분해 제시합니다.
+- 대시보드에서 생성한 프롬프트를 붙여넣으면 인정 Scope 검증까지 포함한 전체 조사가 수행되고, 결과를 대시보드 매핑표에 기록해 관리할 수 있습니다.
+
+---
+
 # 🌱 ESG Stock Tracker
 
 A web application to track Environmental, Social, and Governance (ESG) performance of US stocks.
