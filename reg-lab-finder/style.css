@@ -425,6 +425,42 @@ input:focus, select:focus, textarea:focus {
 .verdict-partial { color: var(--v-partial); }
 .verdict-unverified { color: var(--v-unverified); }
 
+/* Reports */
+.report-card { cursor: pointer; }
+.report-card:hover { border-color: var(--text-muted); }
+.report-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.report-open { color: var(--accent); font-weight: 600; margin-left: auto; }
+.report-toolbar { margin: 0 0 14px; }
+.report-note {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    background: var(--page);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 8px;
+}
+.conclusion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.conclusion-grid .card { padding: 12px 14px; }
+.conclusion-grid ul, .report-questions {
+    margin: 8px 0 0 18px;
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.report-questions { margin-left: 18px; }
+.report-sources { flex-direction: column; gap: 6px; align-items: flex-start; }
+
+@media (max-width: 720px) {
+    .conclusion-grid { grid-template-columns: 1fr; }
+}
+
 .empty-state {
     text-align: center;
     color: var(--text-muted);
