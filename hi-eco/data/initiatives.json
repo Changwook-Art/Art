@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T06:21:23.346Z",
+  "generatedAt": "2026-08-13T06:22:40.615Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 641,
-    "open": 7
+    "open": 8
   },
   "initiatives": [
     {
@@ -116,6 +116,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16573"
     },
     {
+      "id": 14858,
+      "title": "Methodology for calculation and verification of recycled content in batteries",
+      "reference": "Ares(2025)7729439",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-12T10:16:51Z",
+      "feedbackEnd": "2026-09-09T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14858"
+    },
+    {
       "id": 15352,
       "title": "Implementing rules on registering in and reporting to the register of producers",
       "reference": "Ares(2025)8913890",
@@ -168,6 +186,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18855"
+    },
+    {
+      "id": 19033,
+      "title": "Sustainability criteria for plastic recycling technologies",
+      "reference": "Ares(2026)7696337",
+      "actType": "DEC_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19033"
     },
     {
       "id": 18753,
@@ -744,24 +780,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14859"
-    },
-    {
-      "id": 14858,
-      "title": "Methodology for calculation and verification of recycled content in batteries",
-      "reference": "Ares(2025)7729439",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14858"
     },
     {
       "id": 14856,
@@ -1864,24 +1882,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12677"
     },
     {
-      "id": 12662,
-      "title": "Revision of lists of pollutants affecting surface and groundwaters",
-      "reference": "Ares(2020)5545379",
-      "actType": "PROP_DIR",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2022-10-27T18:41:03Z",
-      "feedbackEnd": "2023-03-14T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12662"
-    },
-    {
       "id": 12405,
       "title": "Revision of the Urban Wastewater Treatment Directive",
       "reference": "Ares(2020)2720534",
@@ -2811,14 +2811,12 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15114"
     },
     {
-      "id": 15172,
-      "title": "Proposal for a Council Recommendation on the New European Bauhaus",
-      "reference": "Ares(2025)8423962",
-      "actType": "PROP_RECO",
+      "id": 13077,
+      "title": "RoHS exemption for mercury in cold cathode fluorescent lamps and external electrode fluorescent lamps",
+      "reference": "Ares(2021)3882046",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
-        "Culture and media",
-        "Education and training",
         "Environment"
       ],
       "topicCodes": [
@@ -2828,7 +2826,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15172"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13077"
     },
     {
       "id": 13081,
