@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T05:37:03.060Z",
+  "generatedAt": "2026-08-19T05:37:30.170Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 641,
-    "open": 9
+    "open": 10
   },
   "initiatives": [
     {
@@ -114,6 +114,24 @@
       "feedbackEnd": "2026-09-10T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15352"
+    },
+    {
+      "id": 14712,
+      "title": "Green-listing certain waste for the purposes of shipments to recovery between Member States",
+      "reference": "Ares(2025)4387521",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-18T15:16:00Z",
+      "feedbackEnd": "2026-09-15T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14712"
     },
     {
       "id": 19033,
@@ -1430,24 +1448,6 @@
       "feedbackEnd": "2025-07-10T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14590"
-    },
-    {
-      "id": 14712,
-      "title": "Green-listing certain waste for the purposes of shipments to recovery between Member States",
-      "reference": "Ares(2025)4387521",
-      "actType": "REG_DEL",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2025-07-02T08:21:55Z",
-      "feedbackEnd": "2025-10-31T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14712"
     },
     {
       "id": 14655,
