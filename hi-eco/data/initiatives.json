@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T05:38:17.596Z",
+  "generatedAt": "2026-08-21T05:39:49.705Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 641,
-    "open": 10
+    "open": 12
   },
   "initiatives": [
     {
@@ -204,6 +204,42 @@
       "feedbackEnd": "2026-09-21T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18801"
+    },
+    {
+      "id": 14549,
+      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
+      "reference": "Ares(2025)1583154",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-20T15:53:37Z",
+      "feedbackEnd": "2026-10-15T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
+    },
+    {
+      "id": 16872,
+      "title": "Omnibus simplification of energy-efficient product legislation",
+      "reference": "Ares(2026)1535676",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-20T15:48:46Z",
+      "feedbackEnd": "2026-10-15T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
     },
     {
       "id": 18855,
@@ -4982,24 +5018,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14132"
     },
     {
-      "id": 14549,
-      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
-      "reference": "Ares(2025)1583154",
-      "actType": "PROP_DIR",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2025-04-15T09:46:58Z",
-      "feedbackEnd": "2025-07-08T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
-    },
-    {
       "id": 14830,
       "title": "Carbon price paid in a third country under the carbon border adjustment mechanism (CBAM)",
       "reference": "Ares(2025)6809938",
@@ -8770,24 +8788,6 @@
       "feedbackEnd": "2026-04-23T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16035"
-    },
-    {
-      "id": 16872,
-      "title": "Omnibus simplification of energy-efficient product legislation",
-      "reference": "Ares(2026)1535676",
-      "actType": "PROP_REG",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-02-12T17:48:35Z",
-      "feedbackEnd": "2026-03-12T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
     },
     {
       "id": 14616,
