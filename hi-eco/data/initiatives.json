@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:39:49.705Z",
+  "generatedAt": "2026-08-22T05:34:57.239Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 641,
-    "open": 12
+    "open": 11
   },
   "initiatives": [
-    {
-      "id": 15913,
-      "title": "Amendment of Annexes I and V to Regulation (EU) No 649/2012 on export and import of hazardous chemicals",
-      "reference": "Ares(2025)10431158",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-07-24T09:48:30Z",
-      "feedbackEnd": "2026-08-21T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15913"
-    },
     {
       "id": 14165,
       "title": "Revision of the Network Code on Requirements for Grid Connection of Generators",
@@ -206,24 +188,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18801"
     },
     {
-      "id": 14549,
-      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
-      "reference": "Ares(2025)1583154",
-      "actType": "PROP_REG",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-10-15T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
-    },
-    {
       "id": 16872,
       "title": "Omnibus simplification of energy-efficient product legislation",
       "reference": "Ares(2026)1535676",
@@ -240,6 +204,24 @@
       "feedbackEnd": "2026-10-15T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
+    },
+    {
+      "id": 14549,
+      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
+      "reference": "Ares(2025)1583154",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-20T15:53:37Z",
+      "feedbackEnd": "2026-10-16T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
     {
       "id": 18855,
@@ -1033,6 +1015,24 @@
       "feedbackEnd": "2026-03-09T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16093"
+    },
+    {
+      "id": 15913,
+      "title": "Amendment of Annexes I and V to Regulation (EU) No 649/2012 on export and import of hazardous chemicals",
+      "reference": "Ares(2025)10431158",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-07-24T09:48:30Z",
+      "feedbackEnd": "2026-08-21T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15913"
     },
     {
       "id": 18072,
