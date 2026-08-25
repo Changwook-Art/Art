@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T05:44:58.431Z",
+  "generatedAt": "2026-08-25T05:38:47.111Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 641,
+    "total": 643,
     "open": 11
   },
   "initiatives": [
@@ -219,7 +219,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-10-18T23:59:59Z",
+      "feedbackEnd": "2026-10-19T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
@@ -240,6 +240,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18855"
+    },
+    {
+      "id": 19074,
+      "title": "Environmental Footprint methods – 2026 update",
+      "reference": "Ares(2026)7983512",
+      "actType": "DEC",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19074"
     },
     {
       "id": 18668,
@@ -1882,6 +1900,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12677"
     },
     {
+      "id": 12662,
+      "title": "Revision of lists of pollutants affecting surface and groundwaters",
+      "reference": "Ares(2020)5545379",
+      "actType": "PROP_DIR",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2022-10-27T18:41:03Z",
+      "feedbackEnd": "2023-03-14T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12662"
+    },
+    {
       "id": 12405,
       "title": "Revision of the Urban Wastewater Treatment Directive",
       "reference": "Ares(2020)2720534",
@@ -2793,10 +2829,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14591"
     },
     {
-      "id": 15114,
-      "title": "Switches and relays prohibited from being exporting, imported and manufactured in the EU.",
-      "reference": "Ares(2025)8344163",
-      "actType": "REG_DEL",
+      "id": 13080,
+      "title": "RoHS exemption for mercury in metal halide lamps",
+      "reference": "Ares(2021)3882258",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2808,7 +2844,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15114"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13080"
     },
     {
       "id": 13077,
