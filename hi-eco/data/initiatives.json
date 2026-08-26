@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T05:38:47.111Z",
+  "generatedAt": "2026-08-26T05:41:12.641Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 643,
-    "open": 11
+    "open": 10
   },
   "initiatives": [
-    {
-      "id": 14165,
-      "title": "Revision of the Network Code on Requirements for Grid Connection of Generators",
-      "reference": "Ares(2024)1318485",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-07-08T11:08:10Z",
-      "feedbackEnd": "2026-08-25T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14165"
-    },
     {
       "id": 16573,
       "title": "Ship recycling – European list of ship recycling facilities (16th edition)",
@@ -209,7 +191,7 @@
       "id": 14549,
       "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
       "reference": "Ares(2025)1583154",
-      "actType": "PROP_REG",
+      "actType": "PROP_DIR",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Climate action"
@@ -219,7 +201,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-10-19T23:59:59Z",
+      "feedbackEnd": "2026-10-20T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
@@ -8734,6 +8716,24 @@
       "feedbackEnd": "2026-01-09T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14804"
+    },
+    {
+      "id": 14165,
+      "title": "Revision of the Network Code on Requirements for Grid Connection of Generators",
+      "reference": "Ares(2024)1318485",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-07-08T11:08:10Z",
+      "feedbackEnd": "2026-08-25T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14165"
     },
     {
       "id": 14695,
