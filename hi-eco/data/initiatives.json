@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T16:20:58.141Z",
+  "generatedAt": "2026-08-28T17:18:15.191Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 643,
+    "total": 645,
     "open": 10
   },
   "initiatives": [
@@ -201,7 +201,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-10-22T23:59:59Z",
+      "feedbackEnd": "2026-10-23T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
@@ -222,6 +222,42 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18855"
+    },
+    {
+      "id": 19133,
+      "title": "Green Public Procurement Criteria for sustainable and circular apparel textiles",
+      "reference": "Ares(2026)8097757",
+      "actType": "REG_IMPL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19133"
+    },
+    {
+      "id": 19132,
+      "title": "Minimum values for the performance and durability parameters for portable batteries of general use.",
+      "reference": "Ares(2026)8097754",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19132"
     },
     {
       "id": 19074,
@@ -2775,10 +2811,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14768"
     },
     {
-      "id": 14550,
-      "title": "Packaging and Packaging Waste - exemptions from the reuse obligations for plastic wrappings and straps",
-      "reference": "Ares(2025)1585860",
-      "actType": "DEC_DEL",
+      "id": 13078,
+      "title": "RoHS exemption for mercury in other low pressure discharge lamps",
+      "reference": "Ares(2021)3882143",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2790,13 +2826,13 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14550"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13078"
     },
     {
-      "id": 14591,
-      "title": "Derogations to the prohibition of the destruction of unsold Apparel and Footwear",
-      "reference": "Ares(2025)2204845",
-      "actType": "REG_DEL",
+      "id": 13076,
+      "title": "RoHS exemption for mercury in fluroscent lamps for other general lighting and special purposes",
+      "reference": "Ares(2021)3881995",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2808,7 +2844,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14591"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13076"
     },
     {
       "id": 13080,
@@ -9806,24 +9842,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12471"
     },
     {
-      "id": 12477,
-      "title": "Ex-post evaluation of the nuclear decommissioning assistance programme (2014-2020)",
-      "reference": "Ares(2020)3391909",
-      "actType": null,
-      "stage": "ROADMAP",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2020-08-28T10:44:00Z",
-      "feedbackEnd": "2020-10-16T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12477"
-    },
-    {
       "id": 1990,
       "title": "Adaptation of energy efficiency targets for 2030 to a European Union at 27 Member States",
       "reference": "COM(2018)744",
@@ -10167,6 +10185,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14244"
     },
     {
+      "id": 14147,
+      "title": "Recommendation to promote the development of innovative forms of solar energy deployment",
+      "reference": "Ares(2024)894686",
+      "actType": "ACT",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14147"
+    },
+    {
       "id": 14670,
       "title": "European Affordable Housing Plan",
       "reference": "Ares(2025)3615890",
@@ -10291,24 +10327,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14303"
-    },
-    {
-      "id": 14147,
-      "title": "Recommendation to promote the development of innovative forms of solar energy deployment",
-      "reference": "Ares(2024)894686",
-      "actType": "RECO",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14147"
     },
     {
       "id": 14063,
@@ -11730,6 +11748,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13771"
+    },
+    {
+      "id": 12477,
+      "title": "Ex-post evaluation of the nuclear decommissioning assistance programme (2014-2020)",
+      "reference": "Ares(2020)3391909",
+      "actType": "EVL",
+      "stage": "ABANDONED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12477"
     },
     {
       "id": 11817,
