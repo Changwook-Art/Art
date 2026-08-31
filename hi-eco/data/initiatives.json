@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T10:26:54.659Z",
+  "generatedAt": "2026-08-31T11:31:58.866Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 645,
-    "open": 10
+    "open": 9
   },
   "initiatives": [
-    {
-      "id": 16573,
-      "title": "Ship recycling – European list of ship recycling facilities (16th edition)",
-      "reference": "Ares(2026)796830",
-      "actType": "DEC_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-07-22T15:08:31Z",
-      "feedbackEnd": "2026-08-30T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16573"
-    },
     {
       "id": 14858,
       "title": "Methodology for calculation and verification of recycled content in batteries",
@@ -201,7 +183,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-10-25T23:59:59Z",
+      "feedbackEnd": "2026-10-26T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
@@ -1051,6 +1033,24 @@
       "feedbackEnd": "2026-03-09T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16093"
+    },
+    {
+      "id": 16573,
+      "title": "Ship recycling – European list of ship recycling facilities (16th edition)",
+      "reference": "Ares(2026)796830",
+      "actType": "DEC_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-07-22T15:08:31Z",
+      "feedbackEnd": "2026-08-30T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16573"
     },
     {
       "id": 15913,
