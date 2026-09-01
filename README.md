@@ -24,6 +24,7 @@ EU **Have Your Say** 의견수렴(공공 협의) 최신 동향을 한 페이지�
 - **규제·시험 라이브러리**: EU(RoHS·REACH·LVD·EMC·RED·배터리규정), KC(전기안전·전파법), US FCC의 요구사항 → 시험항목 → 시험표준 → 기관 자격 매핑 (법령 원문 A등급 출처 링크 포함)
 - **기관 디렉터리**: 국내(KTL·KTC·KTR·KCL·HCT·DT&C) 및 글로벌(SGS·TÜV·Intertek·UL 등) 시험·인증기관과 KOLAS·NANDO·IECEE 등 공식 Scope 검증 DB 바로가기
 - **조사 매핑표**: 규제→시험→기관 조사 결과를 확인/부분확인/미확인 판단과 함께 기록·관리 (브라우저 저장, CSV 내보내기)
+- **조사 리포트**: Claude Code에서 조사를 수행하면 결과가 `reg-lab-finder/reports.js`에 커밋되어 리포트로 표시 — 리포트의 매핑을 조사 매핑표로 가져오기 지원
 
 **② Claude Code 스킬** — [`.claude/skills/reg-lab-finder/SKILL.md`](.claude/skills/reg-lab-finder/SKILL.md)
 

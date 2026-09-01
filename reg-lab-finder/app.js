@@ -359,10 +359,155 @@
         renderMappings();
     }
 
+    /* ---------- 조사 리포트 ---------- */
+    const FACT_CLASS = { FACT: "confirmed", INTERPRETATION: "partial", ASSUMPTION: "partial", UNVERIFIED: "unverified" };
+    const reports = (typeof REG_REPORTS !== "undefined") ? REG_REPORTS : [];
+
+    function initReports() {
+        renderReportList();
+        $("#report-list").addEventListener("click", (e) => {
+            const card = e.target.closest("[data-report]");
+            if (card) renderReportDetail(card.dataset.report);
+        });
+        $("#report-detail").addEventListener("click", (e) => {
+            if (e.target.closest("#report-back")) {
+                $("#report-detail").classList.add("hidden");
+                $("#report-list").classList.remove("hidden");
+                return;
+            }
+            const imp = e.target.closest("#report-import");
+            if (imp) importReportMapping(imp.dataset.report);
+        });
+    }
+
+    function renderReportList() {
+        $("#report-list").innerHTML = reports.length === 0
+            ? '<p class="empty-state">아직 리포트가 없습니다. 제품 분석 탭에서 프롬프트를 생성해 Claude Code에서 조사를 실행하세요.</p>'
+            : reports.map((r) => `
+            <article class="card report-card" data-report="${esc(r.id)}" role="button" tabindex="0">
+                <div class="card-top">
+                    <h3>${esc(r.title)}</h3>
+                    <span class="market-badge">${esc(r.date)}</span>
+                </div>
+                <p class="card-summary">${esc(r.summary)}</p>
+                <div class="org-meta">
+                    <span>요구사항 ${r.requirements.length}건</span>
+                    <span>기관 추천 ${r.orgs.length}건</span>
+                    <span>매핑 ${r.mapping.length}건</span>
+                    <span class="report-open">리포트 열기 →</span>
+                </div>
+            </article>`).join("");
+    }
+
+    function verdictBadge(v) {
+        return `<span class="verdict verdict-${esc(v)}">${VERDICTS[v] || esc(v)}</span>`;
+    }
+
+    function renderReportDetail(id) {
+        const r = reports.find((x) => x.id === id);
+        if (!r) return;
+        $("#report-list").classList.add("hidden");
+        const d = $("#report-detail");
+        d.classList.remove("hidden");
+        d.innerHTML = `
+            <div class="btn-row report-toolbar">
+                <button type="button" id="report-back" class="btn">← 목록으로</button>
+                <button type="button" id="report-import" class="btn btn-primary" data-report="${esc(r.id)}">⬇ 매핑표로 가져오기 (${r.mapping.length}건)</button>
+            </div>
+            <article class="card">
+                <div class="card-top">
+                    <h3>${esc(r.title)}</h3>
+                    <span class="market-badge">조사일 ${esc(r.date)}</span>
+                </div>
+                <p class="card-law">${esc(r.product.name)} · ${esc(r.product.desc)} · 대상 시장: ${r.product.markets.map(esc).join(", ")}</p>
+                <p class="card-summary">${esc(r.summary)}</p>
+                ${r.note ? `<p class="report-note">📌 ${esc(r.note)}</p>` : ""}
+            </article>
+
+            ${r.corrections && r.corrections.length ? `
+            <h2 class="panel-title">정정·누락 식별</h2>
+            ${r.corrections.map((c) => `<div class="notice">${esc(c)}</div>`).join("")}` : ""}
+
+            <h2 class="panel-title">규제별 시험·검사 요구사항</h2>
+            <div class="table-wrap"><table class="req-table">
+                <thead><tr><th>규제</th><th>요구사항</th><th>시험 필요성</th><th>시험항목</th><th>시험표준</th><th>기관 자격</th><th>판단</th></tr></thead>
+                <tbody>${r.requirements.map((x) => `
+                    <tr>
+                        <td>${esc(x.reg)}</td><td>${esc(x.req)}</td><td>${esc(x.need)}</td>
+                        <td>${esc(x.items)}</td><td>${esc(x.stds)}</td><td>${esc(x.qual)}</td>
+                        <td><span class="verdict verdict-${FACT_CLASS[x.factLevel] || "unverified"}">${esc(x.factLevel)}</span></td>
+                    </tr>`).join("")}
+                </tbody>
+            </table></div>
+
+            <h2 class="panel-title">시험·검사기관 추천</h2>
+            <div class="table-wrap"><table class="req-table">
+                <thead><tr><th>우선순위</th><th>시험항목</th><th>기관</th><th>인정/지정</th><th>Scope 확인</th><th>비고</th></tr></thead>
+                <tbody>${r.orgs.map((o) => `
+                    <tr>
+                        <td>${esc(o.priority)}</td><td>${esc(o.area)}</td><td>${esc(o.org)}</td>
+                        <td>${esc(o.qual)}</td><td>${verdictBadge(o.verdict)}</td><td>${esc(o.note)}</td>
+                    </tr>`).join("")}
+                </tbody>
+            </table></div>
+
+            <h2 class="panel-title">규제 → 시험 → 기관 매핑표</h2>
+            <div class="table-wrap"><table class="req-table">
+                <thead><tr><th>규제</th><th>요구사항</th><th>시험·검사</th><th>시험표준</th><th>기관</th><th>판단</th><th>근거</th></tr></thead>
+                <tbody>${r.mapping.map((m) => `
+                    <tr>
+                        <td>${esc(m.reg)}</td><td>${esc(m.req)}</td><td>${esc(m.test)}</td>
+                        <td>${esc(m.std)}</td><td>${esc(m.org)}</td><td>${verdictBadge(m.verdict)}</td><td>${esc(m.basis)}</td>
+                    </tr>`).join("")}
+                </tbody>
+            </table></div>
+
+            <h2 class="panel-title">최종 결론</h2>
+            <div class="conclusion-grid">
+                <div class="card"><strong class="verdict verdict-confirmed">바로 의뢰 가능</strong>
+                    ${r.conclusion.ready.length ? "<ul>" + r.conclusion.ready.map((x) => `<li>${esc(x)}</li>`).join("") + "</ul>" : '<p class="card-summary">현 시점 없음 — Scope 직접 확인 필요</p>'}</div>
+                <div class="card"><strong class="verdict verdict-partial">기관 문의 후 확인</strong>
+                    <ul>${r.conclusion.contact.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+                <div class="card"><strong class="verdict verdict-unverified">추가 조사 필요</strong>
+                    <ul>${r.conclusion.research.map((x) => `<li>${esc(x)}</li>`).join("")}</ul></div>
+            </div>
+
+            <h2 class="panel-title">견적 요청 시 확인할 사항</h2>
+            <ul class="report-questions">${r.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>
+
+            <h2 class="panel-title">출처</h2>
+            <div class="card-links report-sources">
+                ${r.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener"><span class="src-grade">${esc(s.grade)}</span>${esc(s.label)} ↗</a>`).join("")}
+            </div>`;
+        d.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function importReportMapping(id) {
+        const r = reports.find((x) => x.id === id);
+        if (!r) return;
+        const rows = loadMappings();
+        const key = (m) => [m.reg, m.req, m.test, m.org].join("|");
+        const existing = new Set(rows.map(key));
+        let added = 0;
+        r.mapping.forEach((m) => {
+            if (existing.has(key(m))) return;
+            rows.push({
+                id: String(Date.now()) + Math.random().toString(36).slice(2, 7),
+                reg: m.reg, req: m.req, test: m.test, std: m.std, org: m.org,
+                verdict: m.verdict, basis: m.basis,
+            });
+            added += 1;
+        });
+        saveMappings(rows);
+        renderMappings();
+        alert(added > 0 ? `매핑표에 ${added}건을 추가했습니다. (중복 ${r.mapping.length - added}건 제외)` : "이미 모두 매핑표에 있습니다.");
+    }
+
     /* ---------- 초기화 ---------- */
     $("#footer-updated").textContent = REG_DATA.updated;
     initForm();
     initLibrary();
     initOrgs();
     initMappings();
+    initReports();
 })();
