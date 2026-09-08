@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T10:06:15.675Z",
+  "generatedAt": "2026-09-08T09:30:59.783Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -183,7 +183,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-11-02T23:59:59Z",
+      "feedbackEnd": "2026-11-03T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
@@ -1376,24 +1376,6 @@
       "feedbackEnd": "2025-12-19T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14835"
-    },
-    {
-      "id": 14834,
-      "title": "Persistent organic pollutants: long-chain perfluorocarboxylic acids, their salts and related compounds.",
-      "reference": "Ares(2025)7122417",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2025-11-21T16:56:00Z",
-      "feedbackEnd": "2025-12-19T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14834"
     },
     {
       "id": 14793,
@@ -2636,6 +2618,24 @@
       "feedbackEnd": "2017-10-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1099"
+    },
+    {
+      "id": 14834,
+      "title": "Persistent organic pollutants: long-chain perfluorocarboxylic acids, their salts and related compounds.",
+      "reference": "Ares(2025)7122417",
+      "actType": "REG_DEL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14834"
     },
     {
       "id": 13251,
