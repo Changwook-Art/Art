@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T09:33:48.034Z",
+  "generatedAt": "2026-09-10T09:33:03.395Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 645,
-    "open": 9
+    "open": 8
   },
   "initiatives": [
-    {
-      "id": 14858,
-      "title": "Methodology for calculation and verification of recycled content in batteries",
-      "reference": "Ares(2025)7729439",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-12T10:16:51Z",
-      "feedbackEnd": "2026-09-09T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14858"
-    },
     {
       "id": 15352,
       "title": "Implementing rules on registering in and reporting to the register of producers",
@@ -1033,6 +1015,24 @@
       "feedbackEnd": "2026-03-09T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16093"
+    },
+    {
+      "id": 14858,
+      "title": "Methodology for calculation and verification of recycled content in batteries",
+      "reference": "Ares(2025)7729439",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-12T10:16:51Z",
+      "feedbackEnd": "2026-09-09T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14858"
     },
     {
       "id": 16573,
