@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T09:33:03.395Z",
+  "generatedAt": "2026-09-11T09:30:02.817Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,28 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 645,
-    "open": 8
+    "total": 646,
+    "open": 7
   },
   "initiatives": [
-    {
-      "id": 15352,
-      "title": "Implementing rules on registering in and reporting to the register of producers",
-      "reference": "Ares(2025)8913890",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-06T15:24:00Z",
-      "feedbackEnd": "2026-09-10T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15352"
-    },
     {
       "id": 14712,
       "title": "Green-listing certain waste for the purposes of shipments to recovery between Member States",
@@ -1015,6 +997,24 @@
       "feedbackEnd": "2026-03-09T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16093"
+    },
+    {
+      "id": 15352,
+      "title": "Implementing rules on registering in and reporting to the register of producers",
+      "reference": "Ares(2025)8913890",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-06T15:24:00Z",
+      "feedbackEnd": "2026-09-10T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15352"
     },
     {
       "id": 14858,
@@ -4596,6 +4596,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14750"
+    },
+    {
+      "id": 19225,
+      "title": "Approval of unilateral extension of ETS1 scope by Sweden",
+      "reference": "Ares(2026)8456971",
+      "actType": "DEC_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
     },
     {
       "id": 18898,
