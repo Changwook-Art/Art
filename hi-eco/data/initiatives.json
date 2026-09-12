@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T09:30:02.817Z",
+  "generatedAt": "2026-09-12T09:10:41.213Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -1360,24 +1360,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14664"
     },
     {
-      "id": 14835,
-      "title": "Persistent organic pollutants: medium-chain chlorinated paraffins.",
-      "reference": "Ares(2025)7122456",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2025-11-21T16:24:20Z",
-      "feedbackEnd": "2025-12-19T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14835"
-    },
-    {
       "id": 14793,
       "title": "Ship recycling – format of the ready for recycling certificate",
       "reference": "Ares(2025)5916502",
@@ -2618,6 +2600,24 @@
       "feedbackEnd": "2017-10-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1099"
+    },
+    {
+      "id": 14835,
+      "title": "Persistent organic pollutants: medium-chain chlorinated paraffins.",
+      "reference": "Ares(2025)7122456",
+      "actType": "REG_DEL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14835"
     },
     {
       "id": 14834,
