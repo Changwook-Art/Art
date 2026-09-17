@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:49:20.136Z",
+  "generatedAt": "2026-09-17T09:56:35.035Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,64 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 648,
-    "open": 6
+    "total": 649,
+    "open": 3
   },
   "initiatives": [
-    {
-      "id": 19033,
-      "title": "Sustainability criteria for plastic recycling technologies",
-      "reference": "Ares(2026)7696337",
-      "actType": "DEC_DEL",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-14T10:48:59Z",
-      "feedbackEnd": "2026-09-16T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19033"
-    },
-    {
-      "id": 18752,
-      "title": "Conditions for importing recycled materials into the EU for use in packaging",
-      "reference": "Ares(2026)6818624",
-      "actType": "DEC_IMPL",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-14T10:48:30Z",
-      "feedbackEnd": "2026-09-16T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18752"
-    },
-    {
-      "id": 18753,
-      "title": "Rules for the calculation and verification of recycled content in plastic packaging",
-      "reference": "Ares(2026)6820488",
-      "actType": "DEC_IMPL",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-14T10:48:00Z",
-      "feedbackEnd": "2026-09-16T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18753"
-    },
     {
       "id": 18801,
       "title": "Evaluation of the European Environment Agency & the European Environment Information & Observation Network for 2022-2026",
@@ -1087,6 +1033,60 @@
       "feedbackEnd": "2026-08-21T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15913"
+    },
+    {
+      "id": 19033,
+      "title": "Sustainability criteria for plastic recycling technologies",
+      "reference": "Ares(2026)7696337",
+      "actType": "DEC_DEL",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-14T10:48:59Z",
+      "feedbackEnd": "2026-09-16T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19033"
+    },
+    {
+      "id": 18752,
+      "title": "Conditions for importing recycled materials into the EU for use in packaging",
+      "reference": "Ares(2026)6818624",
+      "actType": "DEC_IMPL",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-14T10:48:30Z",
+      "feedbackEnd": "2026-09-16T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18752"
+    },
+    {
+      "id": 18753,
+      "title": "Rules for the calculation and verification of recycled content in plastic packaging",
+      "reference": "Ares(2026)6820488",
+      "actType": "DEC_IMPL",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-14T10:48:00Z",
+      "feedbackEnd": "2026-09-16T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18753"
     },
     {
       "id": 18072,
@@ -8408,6 +8408,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
+    },
+    {
+      "id": 19293,
+      "title": "Minimum performance standards for data centres in Europe",
+      "reference": "Ares(2026)8738685",
+      "actType": "PROP_REG",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
     },
     {
       "id": 18695,
