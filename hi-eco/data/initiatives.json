@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:56:35.035Z",
+  "generatedAt": "2026-09-18T09:34:56.172Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,8 +21,8 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 649,
-    "open": 3
+    "total": 648,
+    "open": 4
   },
   "initiatives": [
     {
@@ -60,6 +60,24 @@
       "feedbackEnd": "2026-10-15T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
+    },
+    {
+      "id": 14861,
+      "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
+      "reference": "Ares(2025)7729795",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-18T11:09:04Z",
+      "feedbackEnd": "2026-10-16T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861"
     },
     {
       "id": 14549,
@@ -654,24 +672,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16116"
-    },
-    {
-      "id": 14861,
-      "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
-      "reference": "Ares(2025)7729795",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861"
     },
     {
       "id": 14860,
@@ -2548,24 +2548,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1656"
     },
     {
-      "id": 1224,
-      "title": "EU Pollinators Initiative",
-      "reference": "Ares(2017)5895634",
-      "actType": "COMMUNIC",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2018-01-11T09:00:12Z",
-      "feedbackEnd": "2018-04-05T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1224"
-    },
-    {
       "id": 1563,
       "title": "Revision of the Drinking Water Directive (RECAST 2017)",
       "reference": "COM(2017)753",
@@ -2582,24 +2564,6 @@
       "feedbackEnd": "2018-04-02T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1563"
-    },
-    {
-      "id": 1597,
-      "title": "Global Pact for the Environment",
-      "reference": "Ares(2018)900428",
-      "actType": "PROP_DEC",
-      "stage": "ROADMAP",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2018-02-15T18:52:50Z",
-      "feedbackEnd": "2018-03-15T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1597"
     },
     {
       "id": 1099,
@@ -2782,28 +2746,57 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14685"
     },
     {
-      "id": 13079,
-      "title": "RoHS exemption for mercury in other high pressure sodium lamps for general lighting purposes",
-      "reference": "Ares(2021)3882207",
-      "actType": "DIR_DEL",
+      "id": 14768,
+      "title": "Strategy on Intergenerational Fairness",
+      "reference": "Ares(2025)5510993",
+      "actType": "COMMUNIC",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
-        "Environment"
+        "Agriculture and rural development",
+        "Budget",
+        "Business and industry",
+        "Climate action",
+        "Competition",
+        "Consumers",
+        "Culture and media",
+        "Education and training",
+        "Employment and social affairs",
+        "Energy",
+        "EU enlargement",
+        "Environment",
+        "Banking and financial services",
+        "Food safety",
+        "Public health",
+        "Home affairs",
+        "Humanitarian aid and civil protection",
+        "Institutional affairs",
+        "International cooperation and development",
+        "Justice and fundamental rights",
+        "Regional policy",
+        "Research and innovation",
+        "Sport",
+        "Statistics",
+        "Taxation",
+        "Trade",
+        "Transport",
+        "Youth"
       ],
       "topicCodes": [
-        "ENV"
+        "ENV",
+        "CLIMA",
+        "ENER"
       ],
       "published": null,
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13079"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14768"
     },
     {
-      "id": 13078,
-      "title": "RoHS exemption for mercury in other low pressure discharge lamps",
-      "reference": "Ares(2021)3882143",
-      "actType": "DIR_DEL",
+      "id": 14550,
+      "title": "Packaging and Packaging Waste - exemptions from the reuse obligations for plastic wrappings and straps",
+      "reference": "Ares(2025)1585860",
+      "actType": "DEC_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2815,7 +2808,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13078"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14550"
     },
     {
       "id": 13076,
@@ -4154,6 +4147,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1856"
     },
     {
+      "id": 1224,
+      "title": "EU Pollinators Initiative",
+      "reference": "Ares(2017)5895634",
+      "actType": "COMMUNIC",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1224"
+    },
+    {
       "id": 1492,
       "title": "Commission Decision EMAS reference document for best environmental management practice in agriculture",
       "reference": "Ares(2017)4277291",
@@ -4188,6 +4199,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1209"
+    },
+    {
+      "id": 1597,
+      "title": "Global Pact for the Environment",
+      "reference": "Ares(2018)900428",
+      "actType": "RECO_DEC",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1597"
     },
     {
       "id": 1101,
@@ -5904,26 +5933,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1197"
     },
     {
-      "id": 1853,
-      "title": "Strategy for long-term EU greenhouse gas emissions reductions",
-      "reference": "Ares(2018)3742094",
-      "actType": "COMMUNIC",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Climate action",
-        "Energy"
-      ],
-      "topicCodes": [
-        "CLIMA",
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2018-07-17T09:00:49Z",
-      "feedbackEnd": "2018-10-09T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1853"
-    },
-    {
       "id": 1180,
       "title": "Post 2020 light vehicle CO2 Regulation(s)",
       "reference": "COM(2017)676",
@@ -6068,52 +6077,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17373"
-    },
-    {
-      "id": 14768,
-      "title": "Strategy on Intergenerational Fairness",
-      "reference": "Ares(2025)5510993",
-      "actType": "COMMUNIC",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Agriculture and rural development",
-        "Budget",
-        "Business and industry",
-        "Climate action",
-        "Competition",
-        "Consumers",
-        "Culture and media",
-        "Education and training",
-        "Employment and social affairs",
-        "Energy",
-        "EU enlargement",
-        "Environment",
-        "Banking and financial services",
-        "Food safety",
-        "Public health",
-        "Home affairs",
-        "Humanitarian aid and civil protection",
-        "Institutional affairs",
-        "International cooperation and development",
-        "Justice and fundamental rights",
-        "Regional policy",
-        "Research and innovation",
-        "Sport",
-        "Statistics",
-        "Taxation",
-        "Trade",
-        "Transport",
-        "Youth"
-      ],
-      "topicCodes": [
-        "CLIMA",
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14768"
     },
     {
       "id": 14573,
@@ -8174,6 +8137,26 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1919"
+    },
+    {
+      "id": 1853,
+      "title": "Strategy for long-term EU greenhouse gas emissions reductions",
+      "reference": "Ares(2018)3742094",
+      "actType": "COMMUNIC",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Energy"
+      ],
+      "topicCodes": [
+        "CLIMA",
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1853"
     },
     {
       "id": 1901,
