@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T09:43:11.981Z",
+  "generatedAt": "2026-09-21T10:36:09.228Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 648,
-    "open": 4
+    "open": 5
   },
   "initiatives": [
     {
@@ -96,6 +96,24 @@
       "feedbackEnd": "2026-11-03T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
+    },
+    {
+      "id": 19293,
+      "title": "Minimum performance standards for data centres in Europe",
+      "reference": "Ares(2026)8738685",
+      "actType": "PROP_REG",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-21T12:14:46Z",
+      "feedbackEnd": "2026-12-14T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
     },
     {
       "id": 18855,
@@ -8391,24 +8409,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
-    },
-    {
-      "id": 19293,
-      "title": "Minimum performance standards for data centres in Europe",
-      "reference": "Ares(2026)8738685",
-      "actType": "PROP_REG",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
     },
     {
       "id": 18695,
