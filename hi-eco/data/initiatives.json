@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:52:21.697Z",
+  "generatedAt": "2026-09-24T09:51:31.111Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,8 +21,8 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 648,
-    "open": 4
+    "total": 649,
+    "open": 5
   },
   "initiatives": [
     {
@@ -60,6 +60,24 @@
       "feedbackEnd": "2026-10-16T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861"
+    },
+    {
+      "id": 17215,
+      "title": "Common format for initial and updated National Air Pollution Control Programmes",
+      "reference": "Ares(2026)2385883",
+      "actType": "DEC_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-23T15:24:00Z",
+      "feedbackEnd": "2026-10-21T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215"
     },
     {
       "id": 14549,
@@ -474,24 +492,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17275"
-    },
-    {
-      "id": 17215,
-      "title": "Common format for initial and updated National Air Pollution Control Programmes",
-      "reference": "Ares(2026)2385883",
-      "actType": "DEC_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215"
     },
     {
       "id": 17152,
@@ -8411,6 +8411,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
     },
     {
+      "id": 19315,
+      "title": "Revision of the EU rules on oil stocks",
+      "reference": "Ares(2026)8854124",
+      "actType": "PROP_REG",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19315"
+    },
+    {
       "id": 18695,
       "title": "Hydrogen strategy",
       "reference": "Ares(2026)6682358",
@@ -8896,24 +8914,6 @@
       "feedbackEnd": "2026-05-06T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15052"
-    },
-    {
-      "id": 16035,
-      "title": "Rating scheme for data centres in Europe",
-      "reference": "Ares(2025)10848343",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-03-26T18:08:10Z",
-      "feedbackEnd": "2026-04-23T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16035"
     },
     {
       "id": 14616,
@@ -9984,6 +9984,24 @@
       "feedbackEnd": "2018-01-31T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1237"
+    },
+    {
+      "id": 16035,
+      "title": "Rating scheme for data centres in Europe",
+      "reference": "Ares(2025)10848343",
+      "actType": "REG_DEL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16035"
     },
     {
       "id": 14529,
