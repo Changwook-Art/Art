@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T10:07:26.504Z",
+  "generatedAt": "2026-09-26T09:48:25.100Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -4561,6 +4561,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1036"
     },
     {
+      "id": 14420,
+      "title": "Exemption under RoHS for cadmium in oxygen sensors",
+      "reference": "Ares(2024)7100137",
+      "actType": "DIR_DEL",
+      "stage": "ABANDONED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14420"
+    },
+    {
       "id": 16552,
       "title": "Ecodesign requirements for commercial dishwashers",
       "reference": "Ares(2026)740303",
@@ -4595,24 +4613,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13469"
-    },
-    {
-      "id": 14420,
-      "title": "Exemption under RoHS for cadmium in oxygen sensors",
-      "reference": "Ares(2024)7100137",
-      "actType": "DIR_DEL",
-      "stage": "ABANDONED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14420"
     },
     {
       "id": 14750,
