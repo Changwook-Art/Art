@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T10:29:49.048Z",
+  "generatedAt": "2026-09-28T11:37:26.363Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 649,
-    "open": 5
+    "open": 6
   },
   "initiatives": [
     {
@@ -78,6 +78,24 @@
       "feedbackEnd": "2026-10-21T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215"
+    },
+    {
+      "id": 17712,
+      "title": "Early warning report on waste 2027",
+      "reference": "Ares(2026)3757008",
+      "actType": "REPORT",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-28T10:32:00Z",
+      "feedbackEnd": "2026-10-26T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712"
     },
     {
       "id": 14549,
@@ -312,24 +330,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17772"
-    },
-    {
-      "id": 17712,
-      "title": "Early warning report on waste 2027",
-      "reference": "Ares(2026)3757008",
-      "actType": "REPORT",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712"
     },
     {
       "id": 17698,
