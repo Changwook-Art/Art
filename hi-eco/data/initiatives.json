@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:15:40.374Z",
+  "generatedAt": "2026-09-30T11:04:05.601Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,8 +21,8 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 649,
-    "open": 6
+    "total": 650,
+    "open": 7
   },
   "initiatives": [
     {
@@ -96,6 +96,24 @@
       "feedbackEnd": "2026-10-26T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712"
+    },
+    {
+      "id": 19398,
+      "title": "Chemicals regulation - update of EU rules for test methods",
+      "reference": "Ares(2026)9201435",
+      "actType": "REG",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-29T17:24:00Z",
+      "feedbackEnd": "2026-10-27T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398"
     },
     {
       "id": 14549,
@@ -2811,10 +2829,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14550"
     },
     {
-      "id": 14591,
-      "title": "Derogations to the prohibition of the destruction of unsold Apparel and Footwear",
-      "reference": "Ares(2025)2204845",
-      "actType": "REG_DEL",
+      "id": 13076,
+      "title": "RoHS exemption for mercury in fluroscent lamps for other general lighting and special purposes",
+      "reference": "Ares(2021)3881995",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2826,7 +2844,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14591"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13076"
     },
     {
       "id": 13080,
