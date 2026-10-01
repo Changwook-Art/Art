@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T11:04:05.601Z",
+  "generatedAt": "2026-10-01T11:31:06.523Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 650,
-    "open": 7
+    "open": 8
   },
   "initiatives": [
     {
@@ -114,6 +114,24 @@
       "feedbackEnd": "2026-10-27T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398"
+    },
+    {
+      "id": 14860,
+      "title": "Endangered animal and plant species – suspensions of imports from specific countries",
+      "reference": "Ares(2025)7729775",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-30T18:16:07Z",
+      "feedbackEnd": "2026-10-28T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14860"
     },
     {
       "id": 14549,
@@ -690,24 +708,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16116"
-    },
-    {
-      "id": 14860,
-      "title": "Endangered animal and plant species – suspensions of imports from specific countries",
-      "reference": "Ares(2025)7729775",
-      "actType": "REG_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14860"
     },
     {
       "id": 14859,
@@ -9392,24 +9392,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14297"
     },
     {
-      "id": 14307,
-      "title": "Interim evaluation of the Fusion for Energy Joint Undertaking",
-      "reference": "Ares(2024)4418619",
-      "actType": "REPORT",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2024-07-29T18:24:00Z",
-      "feedbackEnd": "2024-09-06T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14307"
-    },
-    {
       "id": 14275,
       "title": "Revision of the electricity guideline on forward capacity allocation.",
       "reference": "Ares(2024)3429764",
@@ -10002,6 +9984,24 @@
       "feedbackEnd": "2018-01-31T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1237"
+    },
+    {
+      "id": 14307,
+      "title": "Interim evaluation of the Fusion for Energy Joint Undertaking",
+      "reference": "Ares(2024)4418619",
+      "actType": "REPORT",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14307"
     },
     {
       "id": 16035,
