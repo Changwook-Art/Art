@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T11:55:09.252Z",
+  "generatedAt": "2026-10-09T11:46:57.236Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,8 +21,8 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 602,
-    "open": 8
+    "total": 604,
+    "open": 9
   },
   "initiatives": [
     {
@@ -150,6 +150,24 @@
       "feedbackEnd": "2026-11-03T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
+    },
+    {
+      "id": 19474,
+      "title": "Implementing rules  for the postponement of the attainment ddl to meet air quality standards",
+      "reference": "Ares(2026)9527776",
+      "actType": "DEC_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-09T08:56:00Z",
+      "feedbackEnd": "2026-11-06T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474"
     },
     {
       "id": 19293,
@@ -2782,51 +2800,22 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14685"
     },
     {
-      "id": 14768,
-      "title": "Strategy on Intergenerational Fairness",
-      "reference": "Ares(2025)5510993",
-      "actType": "COMMUNIC",
+      "id": 2156,
+      "title": "RoHS exemption for lead in solders used in certain combustion engines",
+      "reference": "Ares(2019)2793792",
+      "actType": "DIR_DEL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
-        "Agriculture and rural development",
-        "Budget",
-        "Business and industry",
-        "Climate action",
-        "Competition",
-        "Consumers",
-        "Culture and media",
-        "Education and training",
-        "Employment and social affairs",
-        "Energy",
-        "EU enlargement",
-        "Environment",
-        "Banking and financial services",
-        "Food safety",
-        "Public health",
-        "Home affairs",
-        "Humanitarian aid and civil protection",
-        "Institutional affairs",
-        "International cooperation and development",
-        "Justice and fundamental rights",
-        "Regional policy",
-        "Research and innovation",
-        "Sport",
-        "Statistics",
-        "Taxation",
-        "Trade",
-        "Transport",
-        "Youth"
+        "Environment"
       ],
       "topicCodes": [
-        "ENV",
-        "CLIMA",
-        "ENER"
+        "ENV"
       ],
       "published": null,
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14768"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/2156"
     },
     {
       "id": 2158,
@@ -5227,6 +5216,52 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17373"
+    },
+    {
+      "id": 14768,
+      "title": "Strategy on Intergenerational Fairness",
+      "reference": "Ares(2025)5510993",
+      "actType": "COMMUNIC",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Agriculture and rural development",
+        "Budget",
+        "Business and industry",
+        "Climate action",
+        "Competition",
+        "Consumers",
+        "Culture and media",
+        "Education and training",
+        "Employment and social affairs",
+        "Energy",
+        "EU enlargement",
+        "Environment",
+        "Banking and financial services",
+        "Food safety",
+        "Public health",
+        "Home affairs",
+        "Humanitarian aid and civil protection",
+        "Institutional affairs",
+        "International cooperation and development",
+        "Justice and fundamental rights",
+        "Regional policy",
+        "Research and innovation",
+        "Sport",
+        "Statistics",
+        "Taxation",
+        "Trade",
+        "Transport",
+        "Youth"
+      ],
+      "topicCodes": [
+        "CLIMA",
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14768"
     },
     {
       "id": 14573,
