@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:46:57.236Z",
+  "generatedAt": "2026-10-10T11:04:38.531Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 604,
-    "open": 9
+    "open": 10
   },
   "initiatives": [
     {
@@ -168,6 +168,24 @@
       "feedbackEnd": "2026-11-06T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474"
+    },
+    {
+      "id": 14450,
+      "title": "Implementing act on templates for reporting methane emissions",
+      "reference": "Ares(2024)8249446",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-09T18:32:00Z",
+      "feedbackEnd": "2026-11-06T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450"
     },
     {
       "id": 19293,
@@ -7704,24 +7722,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14463"
-    },
-    {
-      "id": 14450,
-      "title": "Implementing act on templates for reporting methane emissions",
-      "reference": "Ares(2024)8249446",
-      "actType": "REG_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450"
     },
     {
       "id": 14364,
