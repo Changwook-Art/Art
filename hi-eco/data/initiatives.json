@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T12:58:13.108Z",
+  "generatedAt": "2026-10-13T12:35:09.128Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -546,24 +546,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17472"
-    },
-    {
-      "id": 17276,
-      "title": "Relevant raw materials and the format and frequency of data to be reported under the Regulation (EU) 2024/1244",
-      "reference": "Ares(2026)2603351",
-      "actType": "DEC_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17276"
     },
     {
       "id": 17275,
@@ -2654,6 +2636,24 @@
       "feedbackEnd": "2017-10-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1099"
+    },
+    {
+      "id": 17276,
+      "title": "Relevant raw materials and the format and frequency of data to be reported under the Regulation (EU) 2024/1244",
+      "reference": "Ares(2026)2603351",
+      "actType": "DEC_IMPL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17276"
     },
     {
       "id": 14835,
