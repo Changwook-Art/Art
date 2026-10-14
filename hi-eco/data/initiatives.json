@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:35:09.128Z",
+  "generatedAt": "2026-10-14T10:02:24.303Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 604,
-    "open": 10
+    "open": 11
   },
   "initiatives": [
     {
@@ -153,7 +153,7 @@
     },
     {
       "id": 19474,
-      "title": "Implementing rules  for the postponement of the attainment ddl to meet air quality standards",
+      "title": "Technical details for air quality projections and implementation reports",
       "reference": "Ares(2026)9527776",
       "actType": "DEC_IMPL",
       "stage": "ISC_WORKFLOW",
@@ -186,6 +186,24 @@
       "feedbackEnd": "2026-11-06T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450"
+    },
+    {
+      "id": 15032,
+      "title": "Revision of network code on capacity allocation mechanisms in gas transmission systems",
+      "reference": "Ares(2025)8122470",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-13T15:32:00Z",
+      "feedbackEnd": "2026-11-10T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032"
     },
     {
       "id": 19293,
@@ -7668,24 +7686,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14515"
-    },
-    {
-      "id": 15032,
-      "title": "Revision of network code on capacity allocation mechanisms in gas transmission systems",
-      "reference": "Ares(2025)8122470",
-      "actType": "REG_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032"
     },
     {
       "id": 14464,
