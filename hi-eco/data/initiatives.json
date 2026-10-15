@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T10:02:24.303Z",
+  "generatedAt": "2026-10-15T09:44:06.906Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 604,
+    "total": 605,
     "open": 11
   },
   "initiatives": [
@@ -222,6 +222,24 @@
       "feedbackEnd": "2026-12-14T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
+    },
+    {
+      "id": 19475,
+      "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
+      "reference": "Ares(2026)9529146",
+      "actType": "DIR_IMPL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
     },
     {
       "id": 19412,
@@ -2818,10 +2836,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14833"
     },
     {
-      "id": 14685,
-      "title": "Export and import of hazardous chemicals",
-      "reference": "Ares(2025)3901901",
-      "actType": "REG_DEL",
+      "id": 1913,
+      "title": "Evaluation of the Industrial Emissions Directive",
+      "reference": "Ares(2018)4758971",
+      "actType": "SWD",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2833,7 +2851,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14685"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1913"
     },
     {
       "id": 2156,
