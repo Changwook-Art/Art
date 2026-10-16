@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:44:06.906Z",
+  "generatedAt": "2026-10-16T09:38:12.290Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 605,
-    "open": 11
+    "open": 10
   },
   "initiatives": [
-    {
-      "id": 16872,
-      "title": "Omnibus simplification of energy-efficient product legislation",
-      "reference": "Ares(2026)1535676",
-      "actType": "PROP_REG",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-20T15:48:46Z",
-      "feedbackEnd": "2026-10-15T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
-    },
     {
       "id": 14861,
       "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
@@ -7957,6 +7939,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12131"
+    },
+    {
+      "id": 16872,
+      "title": "Omnibus simplification of energy-efficient product legislation",
+      "reference": "Ares(2026)1535676",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-20T15:48:46Z",
+      "feedbackEnd": "2026-10-15T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16872"
     },
     {
       "id": 17453,
