@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:38:12.290Z",
+  "generatedAt": "2026-10-17T09:09:24.777Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -25,24 +25,6 @@
     "open": 10
   },
   "initiatives": [
-    {
-      "id": 14861,
-      "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
-      "reference": "Ares(2025)7729795",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-09-18T11:38:36Z",
-      "feedbackEnd": "2026-10-16T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861"
-    },
     {
       "id": 17215,
       "title": "Common format for initial and updated National Air Pollution Control Programmes",
@@ -188,6 +170,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032"
     },
     {
+      "id": 19475,
+      "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
+      "reference": "Ares(2026)9529146",
+      "actType": "DIR",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-16T18:17:00Z",
+      "feedbackEnd": "2026-11-13T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
+    },
+    {
       "id": 19293,
       "title": "Minimum performance standards for data centres in Europe",
       "reference": "Ares(2026)8738685",
@@ -204,24 +204,6 @@
       "feedbackEnd": "2026-12-14T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
-    },
-    {
-      "id": 19475,
-      "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
-      "reference": "Ares(2026)9529146",
-      "actType": "DIR_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
     },
     {
       "id": 19412,
@@ -979,6 +961,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 14861,
+      "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
+      "reference": "Ares(2025)7729795",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-18T11:38:36Z",
+      "feedbackEnd": "2026-10-16T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14861"
     },
     {
       "id": 16093,
