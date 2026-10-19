@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T09:26:47.595Z",
+  "generatedAt": "2026-10-19T10:39:44.105Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,8 +21,8 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 605,
-    "open": 10
+    "total": 606,
+    "open": 11
   },
   "initiatives": [
     {
@@ -188,6 +188,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
     },
     {
+      "id": 19225,
+      "title": "Approval of unilateral extension of ETS1 scope by Sweden",
+      "reference": "Ares(2026)8456971",
+      "actType": "DEC_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-19T12:17:31Z",
+      "feedbackEnd": "2026-11-16T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
+    },
+    {
       "id": 19293,
       "title": "Minimum performance standards for data centres in Europe",
       "reference": "Ares(2026)8738685",
@@ -204,6 +222,24 @@
       "feedbackEnd": "2026-12-14T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
+    },
+    {
+      "id": 19498,
+      "title": "EU rules on biobased feedstock in plastic packaging",
+      "reference": "Ares(2026)9620334",
+      "actType": "PROP_REG",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
     },
     {
       "id": 19412,
@@ -2800,10 +2836,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18053"
     },
     {
-      "id": 14833,
-      "title": "Persistent organic pollutants: chlorpyrifos",
-      "reference": "Ares(2025)7122393",
-      "actType": "REG_DEL",
+      "id": 11676,
+      "title": "Trade restrictions for certain species of wild plants and animals",
+      "reference": "Ares(2019)3386311",
+      "actType": "REG_IMPL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2815,7 +2851,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14833"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/11676"
     },
     {
       "id": 1913,
@@ -3789,24 +3825,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14750"
-    },
-    {
-      "id": 19225,
-      "title": "Approval of unilateral extension of ETS1 scope by Sweden",
-      "reference": "Ares(2026)8456971",
-      "actType": "DEC_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
     },
     {
       "id": 18898,
