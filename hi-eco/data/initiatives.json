@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T09:59:13.810Z",
+  "generatedAt": "2026-10-22T09:59:29.409Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,28 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 606,
+    "total": 607,
     "open": 11
   },
   "initiatives": [
-    {
-      "id": 17215,
-      "title": "Common format for initial and updated National Air Pollution Control Programmes",
-      "reference": "Ares(2026)2385883",
-      "actType": "DEC_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-09-23T15:24:00Z",
-      "feedbackEnd": "2026-10-21T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215"
-    },
     {
       "id": 17712,
       "title": "Early warning report on waste 2027",
@@ -228,7 +210,7 @@
       "title": "EU rules on biobased feedstock in plastic packaging",
       "reference": "Ares(2026)9620334",
       "actType": "PROP_REG",
-      "stage": "INIT_PLANNED",
+      "stage": "OPC_LAUNCHED",
       "topics": [
         "Environment"
       ],
@@ -236,9 +218,9 @@
         "ENV"
       ],
       "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
+      "feedbackStart": "2026-10-21T15:51:35Z",
+      "feedbackEnd": "2027-01-13T23:59:59Z",
+      "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
     },
     {
@@ -999,6 +981,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
     },
     {
+      "id": 17215,
+      "title": "Common format for initial and updated National Air Pollution Control Programmes",
+      "reference": "Ares(2026)2385883",
+      "actType": "DEC_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-23T15:24:00Z",
+      "feedbackEnd": "2026-10-21T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17215"
+    },
+    {
       "id": 14861,
       "title": "List of non-OECD countries that are authorized to import certain non-hazardous waste from the EU",
       "reference": "Ares(2025)7729795",
@@ -1379,39 +1379,6 @@
       "feedbackEnd": "2026-03-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14422"
-    },
-    {
-      "id": 16154,
-      "title": "Update of the EU Arctic policy",
-      "reference": "Ares(2025)11255661",
-      "actType": "JOINT_COMMUNIC",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Business and industry",
-        "Climate action",
-        "Competition",
-        "Energy",
-        "Environment",
-        "Foreign affairs and security policy",
-        "Public health",
-        "Institutional affairs",
-        "International cooperation and development",
-        "Maritime affairs and fisheries",
-        "Regional policy",
-        "Research and innovation",
-        "Trade",
-        "Transport"
-      ],
-      "topicCodes": [
-        "ENV",
-        "CLIMA",
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2025-12-22T15:24:29Z",
-      "feedbackEnd": "2026-03-16T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16154"
     },
     {
       "id": 14822,
@@ -2690,6 +2657,39 @@
       "feedbackEnd": "2017-10-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1099"
+    },
+    {
+      "id": 16154,
+      "title": "Update of the EU Arctic policy",
+      "reference": "Ares(2025)11255661",
+      "actType": "JOINT_COMMUNIC",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Business and industry",
+        "Climate action",
+        "Competition",
+        "Energy",
+        "Environment",
+        "Foreign affairs and security policy",
+        "Public health",
+        "Institutional affairs",
+        "International cooperation and development",
+        "Maritime affairs and fisheries",
+        "Regional policy",
+        "Research and innovation",
+        "Trade",
+        "Transport"
+      ],
+      "topicCodes": [
+        "ENV",
+        "CLIMA",
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16154"
     },
     {
       "id": 17276,
@@ -7650,6 +7650,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
+    },
+    {
+      "id": 19515,
+      "title": "Merge of the methodologies for GHG emission savings for renewable fuels of non-biological origin and low-carbon fuels",
+      "reference": "Ares(2026)9722392",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19515"
     },
     {
       "id": 19315,
