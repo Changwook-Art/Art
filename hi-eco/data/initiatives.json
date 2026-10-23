@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T09:59:29.409Z",
+  "generatedAt": "2026-10-23T09:54:36.306Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 607,
+    "total": 608,
     "open": 11
   },
   "initiatives": [
@@ -3825,6 +3825,25 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14750"
+    },
+    {
+      "id": 19536,
+      "title": "IRIS² evaluation",
+      "reference": "Ares(2026)9771047",
+      "actType": "EVL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Climate action",
+        "Foreign affairs and security policy"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19536"
     },
     {
       "id": 18898,
