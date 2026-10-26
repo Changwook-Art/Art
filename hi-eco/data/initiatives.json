@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T09:42:39.344Z",
+  "generatedAt": "2026-10-26T10:56:24.866Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 608,
-    "open": 11
+    "open": 13
   },
   "initiatives": [
     {
@@ -186,6 +186,43 @@
       "feedbackEnd": "2026-11-16T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
+    },
+    {
+      "id": 16772,
+      "title": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
+      "reference": "Ares(2026)1302518",
+      "actType": "REG",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Transport"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-26T09:51:00Z",
+      "feedbackEnd": "2026-11-23T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772"
+    },
+    {
+      "id": 18695,
+      "title": "Hydrogen strategy",
+      "reference": "Ares(2026)6682358",
+      "actType": "COMMUNIC",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-26T10:17:00Z",
+      "feedbackEnd": "2026-11-23T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695"
     },
     {
       "id": 19293,
@@ -3899,25 +3936,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
-    },
-    {
-      "id": 16772,
-      "title": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
-      "reference": "Ares(2026)1302518",
-      "actType": "REG",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Climate action",
-        "Transport"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772"
     },
     {
       "id": 16452,
@@ -7705,24 +7723,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19315"
-    },
-    {
-      "id": 18695,
-      "title": "Hydrogen strategy",
-      "reference": "Ares(2026)6682358",
-      "actType": "COMMUNIC",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695"
     },
     {
       "id": 14515,
