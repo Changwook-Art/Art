@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T10:56:24.866Z",
+  "generatedAt": "2026-10-27T10:20:30.984Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 608,
-    "open": 13
+    "open": 14
   },
   "initiatives": [
-    {
-      "id": 17712,
-      "title": "Early warning report on waste 2027",
-      "reference": "Ares(2026)3757008",
-      "actType": "REPORT",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-09-28T10:32:00Z",
-      "feedbackEnd": "2026-10-26T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712"
-    },
     {
       "id": 19398,
       "title": "Chemicals regulation - update of EU rules for test methods",
@@ -223,6 +205,42 @@
       "feedbackEnd": "2026-11-23T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695"
+    },
+    {
+      "id": 15632,
+      "title": "Harmonized classification and labelling of certain substances (CLP Regulation)",
+      "reference": "Ares(2025)9555728",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-27T10:34:29Z",
+      "feedbackEnd": "2026-11-24T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15632"
+    },
+    {
+      "id": 17632,
+      "title": "Classification, labelling and packaging of substances and mixtures (CLP Regulation)",
+      "reference": "Ares(2026)3572407",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-27T10:34:00Z",
+      "feedbackEnd": "2026-11-24T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632"
     },
     {
       "id": 19293,
@@ -495,24 +513,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17698"
     },
     {
-      "id": 17632,
-      "title": "Classification, labelling and packaging of substances and mixtures (CLP Regulation)",
-      "reference": "Ares(2026)3572407",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632"
-    },
-    {
       "id": 17875,
       "title": "Energy labelling requirements for household washing machines and household washer-dryers",
       "reference": "Ares(2026)4109827",
@@ -745,24 +745,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15633"
-    },
-    {
-      "id": 15632,
-      "title": "Harmonized classification and labelling of certain substances (CLP Regulation)",
-      "reference": "Ares(2025)9555728",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15632"
     },
     {
       "id": 15595,
@@ -1016,6 +998,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 17712,
+      "title": "Early warning report on waste 2027",
+      "reference": "Ares(2026)3757008",
+      "actType": "REPORT",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-28T10:32:00Z",
+      "feedbackEnd": "2026-10-26T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17712"
     },
     {
       "id": 17215,
