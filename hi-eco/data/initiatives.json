@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:20:30.984Z",
+  "generatedAt": "2026-10-28T11:12:15.371Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,28 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 608,
-    "open": 14
+    "total": 611,
+    "open": 13
   },
   "initiatives": [
-    {
-      "id": 19398,
-      "title": "Chemicals regulation - update of EU rules for test methods",
-      "reference": "Ares(2026)9201435",
-      "actType": "REG",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-09-29T17:24:00Z",
-      "feedbackEnd": "2026-10-27T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398"
-    },
     {
       "id": 14860,
       "title": "Endangered animal and plant species – suspensions of imports from specific countries",
@@ -1000,6 +982,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
     },
     {
+      "id": 19398,
+      "title": "Chemicals regulation - update of EU rules for test methods",
+      "reference": "Ares(2026)9201435",
+      "actType": "REG",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-29T17:24:00Z",
+      "feedbackEnd": "2026-10-27T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19398"
+    },
+    {
       "id": 17712,
       "title": "Early warning report on waste 2027",
       "reference": "Ares(2026)3757008",
@@ -1088,24 +1088,6 @@
       "feedbackEnd": "2026-09-21T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18801"
-    },
-    {
-      "id": 14712,
-      "title": "Green-listing certain waste for the purposes of shipments to recovery between Member States",
-      "reference": "Ares(2025)4387521",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-18T15:16:00Z",
-      "feedbackEnd": "2026-09-15T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14712"
     },
     {
       "id": 15352,
@@ -2694,6 +2676,24 @@
       "feedbackEnd": "2017-10-17T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1099"
+    },
+    {
+      "id": 14712,
+      "title": "Green-listing certain waste for the purposes of shipments to recovery between Member States",
+      "reference": "Ares(2025)4387521",
+      "actType": "REG_DEL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14712"
     },
     {
       "id": 16154,
@@ -7687,6 +7687,60 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
+    },
+    {
+      "id": 19593,
+      "title": "Regulation amending Regulation (EU) 2025/2052 setting ecodesign requirements for external power supplies",
+      "reference": "Ares(2026)9931595",
+      "actType": "REG",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19593"
+    },
+    {
+      "id": 19592,
+      "title": "Revision of the production criteria for renewable fuels of non-biological origin",
+      "reference": "Ares(2026)9931329",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19592"
+    },
+    {
+      "id": 19573,
+      "title": "Deletion of Art 2 & Annex B of Reg 838/2010 regarding EU cap on use-of-network charges that may be applied to generators",
+      "reference": "Ares(2026)9916416",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19573"
     },
     {
       "id": 19515,
