@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:12:15.371Z",
+  "generatedAt": "2026-10-29T11:25:13.045Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 13
+    "open": 12
   },
   "initiatives": [
-    {
-      "id": 14860,
-      "title": "Endangered animal and plant species – suspensions of imports from specific countries",
-      "reference": "Ares(2025)7729775",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-09-30T18:16:07Z",
-      "feedbackEnd": "2026-10-28T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14860"
-    },
     {
       "id": 14549,
       "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
@@ -980,6 +962,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 14860,
+      "title": "Endangered animal and plant species – suspensions of imports from specific countries",
+      "reference": "Ares(2025)7729775",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-09-30T18:16:07Z",
+      "feedbackEnd": "2026-10-28T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14860"
     },
     {
       "id": 19398,
