@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:25:13.045Z",
+  "generatedAt": "2026-10-30T11:17:34.947Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 12
+    "open": 13
   },
   "initiatives": [
     {
@@ -205,6 +205,25 @@
       "feedbackEnd": "2026-11-24T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632"
+    },
+    {
+      "id": 16773,
+      "title": "Heavy-duty trailers – inclusion of new trailer technologies in the CO2 determination methodology",
+      "reference": "Ares(2026)1302634",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Transport"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-29T12:51:21Z",
+      "feedbackEnd": "2026-11-26T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
     },
     {
       "id": 19293,
@@ -3917,25 +3936,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17033"
-    },
-    {
-      "id": 16773,
-      "title": "Heavy-duty trailers – inclusion of new trailer technologies in the CO2 determination methodology",
-      "reference": "Ares(2026)1302634",
-      "actType": "REG_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Climate action",
-        "Transport"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
     },
     {
       "id": 16452,
