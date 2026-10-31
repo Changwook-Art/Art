@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T11:17:34.947Z",
+  "generatedAt": "2026-10-31T10:50:35.130Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 13
+    "open": 14
   },
   "initiatives": [
     {
@@ -224,6 +224,24 @@
       "feedbackEnd": "2026-11-26T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
+    },
+    {
+      "id": 16240,
+      "title": "States considered to be applying CORSIA in 2026 for ETS purposes",
+      "reference": "Ares(2025)11438579",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-30T17:34:00Z",
+      "feedbackEnd": "2026-11-27T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240"
     },
     {
       "id": 19293,
@@ -3973,24 +3991,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414"
-    },
-    {
-      "id": 16240,
-      "title": "States considered to be applying CORSIA in 2026 for ETS purposes",
-      "reference": "Ares(2025)11438579",
-      "actType": "REG_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240"
     },
     {
       "id": 14810,
