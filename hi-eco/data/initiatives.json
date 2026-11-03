@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T13:19:51.056Z",
+  "generatedAt": "2026-11-03T12:43:30.929Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 14
+    "open": 15
   },
   "initiatives": [
     {
@@ -280,6 +280,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
     },
     {
+      "id": 17873,
+      "title": "Ecodesign requirements on product repairability",
+      "reference": "Ares(2026)4109761",
+      "actType": "REG_DEL",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-11-03T09:36:17Z",
+      "feedbackEnd": "2027-02-09T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17873"
+    },
+    {
       "id": 19412,
       "title": "Ship recycling – European list of ship recycling facilities (17th edition)",
       "reference": "Ares(2026)9282678",
@@ -404,24 +422,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18668"
-    },
-    {
-      "id": 17873,
-      "title": "Ecodesign requirements on product repairability",
-      "reference": "Ares(2026)4109761",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17873"
     },
     {
       "id": 18272,
