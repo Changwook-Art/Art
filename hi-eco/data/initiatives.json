@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:43:30.929Z",
+  "generatedAt": "2026-11-04T12:53:44.254Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 15
+    "open": 14
   },
   "initiatives": [
-    {
-      "id": 14549,
-      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
-      "reference": "Ares(2025)1583154",
-      "actType": "PROP_DIR",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-08-20T15:53:37Z",
-      "feedbackEnd": "2026-11-03T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
-    },
     {
       "id": 19474,
       "title": "Technical details for air quality projections and implementation reports",
@@ -4227,6 +4209,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13287"
+    },
+    {
+      "id": 14549,
+      "title": "EU emissions trading system for maritime, aviation and stationary installations, and market stability reserve - review",
+      "reference": "Ares(2025)1583154",
+      "actType": "PROP_DIR",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-08-25T12:20:31Z",
+      "feedbackEnd": "2026-11-03T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14549"
     },
     {
       "id": 16632,
