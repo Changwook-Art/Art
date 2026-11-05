@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T12:53:44.254Z",
+  "generatedAt": "2026-11-05T13:02:00.967Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 611,
-    "open": 14
+    "open": 15
   },
   "initiatives": [
     {
@@ -242,6 +242,24 @@
       "feedbackEnd": "2026-12-14T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
+    },
+    {
+      "id": 14770,
+      "title": "European climate resilience and risk management law",
+      "reference": "Ares(2025)5580019",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-11-04T14:42:25Z",
+      "feedbackEnd": "2026-12-31T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
     {
       "id": 19498,
@@ -4263,24 +4281,6 @@
       "feedbackEnd": "2026-05-04T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16692"
-    },
-    {
-      "id": 14770,
-      "title": "European climate resilience and risk management law",
-      "reference": "Ares(2025)5580019",
-      "actType": "PROP_REG",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2025-12-01T10:11:35Z",
-      "feedbackEnd": "2026-02-23T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
     {
       "id": 14727,
