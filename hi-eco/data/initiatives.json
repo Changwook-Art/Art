@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T13:02:00.967Z",
+  "generatedAt": "2026-11-06T12:50:33.060Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 611,
+    "total": 612,
     "open": 15
   },
   "initiatives": [
@@ -257,7 +257,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2026-12-31T23:59:59Z",
+      "feedbackEnd": "2027-01-01T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -7687,6 +7687,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
+    },
+    {
+      "id": 19683,
+      "title": "Review of primary energy factors",
+      "reference": "Ares(2026)10174559",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19683"
     },
     {
       "id": 19593,
