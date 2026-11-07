@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:50:33.060Z",
+  "generatedAt": "2026-11-07T11:38:22.898Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,45 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 612,
-    "open": 15
+    "open": 13
   },
   "initiatives": [
-    {
-      "id": 19474,
-      "title": "Technical details for air quality projections and implementation reports",
-      "reference": "Ares(2026)9527776",
-      "actType": "DEC_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-09T08:56:00Z",
-      "feedbackEnd": "2026-11-06T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474"
-    },
-    {
-      "id": 14450,
-      "title": "Implementing act on templates for reporting methane emissions",
-      "reference": "Ares(2024)8249446",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-09T18:32:00Z",
-      "feedbackEnd": "2026-11-06T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450"
-    },
     {
       "id": 15032,
       "title": "Revision of network code on capacity allocation mechanisms in gas transmission systems",
@@ -257,7 +221,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-01T23:59:59Z",
+      "feedbackEnd": "2027-01-02T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -999,6 +963,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 19474,
+      "title": "Technical details for air quality projections and implementation reports",
+      "reference": "Ares(2026)9527776",
+      "actType": "DEC_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-09T08:56:00Z",
+      "feedbackEnd": "2026-11-06T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19474"
     },
     {
       "id": 14860,
@@ -8066,6 +8048,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12131"
+    },
+    {
+      "id": 14450,
+      "title": "Implementing act on templates for reporting methane emissions",
+      "reference": "Ares(2024)8249446",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-09T18:32:00Z",
+      "feedbackEnd": "2026-11-06T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14450"
     },
     {
       "id": 16872,
