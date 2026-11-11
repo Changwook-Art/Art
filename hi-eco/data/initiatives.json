@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:23:49.917Z",
+  "generatedAt": "2026-11-11T12:34:58.557Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 612,
-    "open": 13
+    "open": 12
   },
   "initiatives": [
-    {
-      "id": 15032,
-      "title": "Revision of network code on capacity allocation mechanisms in gas transmission systems",
-      "reference": "Ares(2025)8122470",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-13T15:32:00Z",
-      "feedbackEnd": "2026-11-10T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032"
-    },
     {
       "id": 19475,
       "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
@@ -221,7 +203,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-05T23:59:59Z",
+      "feedbackEnd": "2027-01-06T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -8048,6 +8030,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12131"
+    },
+    {
+      "id": 15032,
+      "title": "Revision of network code on capacity allocation mechanisms in gas transmission systems",
+      "reference": "Ares(2025)8122470",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-13T15:32:00Z",
+      "feedbackEnd": "2026-11-10T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15032"
     },
     {
       "id": 14450,
