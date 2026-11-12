@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:34:58.557Z",
+  "generatedAt": "2026-11-12T13:39:48.303Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,7 +21,7 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 612,
+    "total": 613,
     "open": 12
   },
   "initiatives": [
@@ -203,7 +203,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-06T23:59:59Z",
+      "feedbackEnd": "2027-01-07T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -7651,6 +7651,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13292"
+    },
+    {
+      "id": 19734,
+      "title": "Network Code on Demand Response",
+      "reference": "Ares(2026)10417160",
+      "actType": "REG_IMPL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19734"
     },
     {
       "id": 19683,
