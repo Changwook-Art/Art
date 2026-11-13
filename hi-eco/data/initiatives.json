@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T13:39:48.303Z",
+  "generatedAt": "2026-11-13T12:58:20.385Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,7 +22,7 @@
   "failedTopics": [],
   "counts": {
     "total": 613,
-    "open": 12
+    "open": 13
   },
   "initiatives": [
     {
@@ -172,6 +172,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240"
     },
     {
+      "id": 16414,
+      "title": "Certification methodologies for carbon storage in long-lasting products",
+      "reference": "Ares(2026)433232",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-11-12T17:34:31Z",
+      "feedbackEnd": "2026-12-10T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414"
+    },
+    {
       "id": 19293,
       "title": "Minimum performance standards for data centres in Europe",
       "reference": "Ares(2026)8738685",
@@ -203,7 +221,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-07T23:59:59Z",
+      "feedbackEnd": "2027-01-08T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -3937,24 +3955,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16452"
-    },
-    {
-      "id": 16414,
-      "title": "Certification methodologies for carbon storage in long-lasting products",
-      "reference": "Ares(2026)433232",
-      "actType": "REG_DEL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16414"
     },
     {
       "id": 14810,
