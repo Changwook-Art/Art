@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T12:58:20.385Z",
+  "generatedAt": "2026-11-14T12:01:33.874Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 613,
-    "open": 13
+    "open": 12
   },
   "initiatives": [
-    {
-      "id": 19475,
-      "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
-      "reference": "Ares(2026)9529146",
-      "actType": "DIR",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-16T18:17:00Z",
-      "feedbackEnd": "2026-11-13T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
-    },
     {
       "id": 19225,
       "title": "Approval of unilateral extension of ETS1 scope by Sweden",
@@ -221,7 +203,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-08T23:59:59Z",
+      "feedbackEnd": "2027-01-09T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -963,6 +945,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 19475,
+      "title": "Nitrates – extension of rules on recovered nitrogen from manure to certain types of digestate derived from livestock",
+      "reference": "Ares(2026)9529146",
+      "actType": "DIR",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-16T18:17:00Z",
+      "feedbackEnd": "2026-11-13T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19475"
     },
     {
       "id": 19474,
