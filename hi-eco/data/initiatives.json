@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:30:24.078Z",
+  "generatedAt": "2026-11-17T14:15:35.891Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,28 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 613,
-    "open": 12
+    "total": 614,
+    "open": 11
   },
   "initiatives": [
-    {
-      "id": 19225,
-      "title": "Approval of unilateral extension of ETS1 scope by Sweden",
-      "reference": "Ares(2026)8456971",
-      "actType": "DEC_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-19T12:17:31Z",
-      "feedbackEnd": "2026-11-16T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
-    },
     {
       "id": 16772,
       "title": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
@@ -203,7 +185,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-11T23:59:59Z",
+      "feedbackEnd": "2027-01-12T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -3883,6 +3865,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14750"
     },
     {
+      "id": 19792,
+      "title": "EU emissions trading system (ETS2) - verification simplification for regulated entities with low emissions",
+      "reference": "Ares(2026)10534919",
+      "actType": "REG_DEL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19792"
+    },
+    {
       "id": 19536,
       "title": "IRIS² evaluation",
       "reference": "Ares(2026)9771047",
@@ -4191,6 +4191,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13287"
+    },
+    {
+      "id": 19225,
+      "title": "Approval of unilateral extension of ETS1 scope by Sweden",
+      "reference": "Ares(2026)8456971",
+      "actType": "DEC_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-19T12:17:31Z",
+      "feedbackEnd": "2026-11-16T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19225"
     },
     {
       "id": 14549,
