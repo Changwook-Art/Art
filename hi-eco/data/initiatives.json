@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:15:35.891Z",
+  "generatedAt": "2026-11-18T13:46:21.558Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -172,24 +172,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
     },
     {
-      "id": 14770,
-      "title": "European climate resilience and risk management law",
-      "reference": "Ares(2025)5580019",
-      "actType": "PROP_REG",
-      "stage": "ADOPTION_WORKFLOW",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-12T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
-    },
-    {
       "id": 19498,
       "title": "EU rules on biobased feedstock in plastic packaging",
       "reference": "Ares(2026)9620334",
@@ -206,6 +188,24 @@
       "feedbackEnd": "2027-01-13T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
+    },
+    {
+      "id": 14770,
+      "title": "European climate resilience and risk management law",
+      "reference": "Ares(2025)5580019",
+      "actType": "PROP_REG",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-11-04T14:42:25Z",
+      "feedbackEnd": "2027-01-13T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
     {
       "id": 17873,
