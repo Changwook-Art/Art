@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T15:50:09.225Z",
+  "generatedAt": "2026-11-24T15:41:35.743Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,47 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 614,
-    "open": 11
+    "total": 615,
+    "open": 9
   },
   "initiatives": [
-    {
-      "id": 16772,
-      "title": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
-      "reference": "Ares(2026)1302518",
-      "actType": "REG",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Climate action",
-        "Transport"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-26T09:51:00Z",
-      "feedbackEnd": "2026-11-23T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772"
-    },
-    {
-      "id": 18695,
-      "title": "Hydrogen strategy",
-      "reference": "Ares(2026)6682358",
-      "actType": "COMMUNIC",
-      "stage": "PLANNING_WORKFLOW",
-      "topics": [
-        "Energy"
-      ],
-      "topicCodes": [
-        "ENER"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-26T10:17:00Z",
-      "feedbackEnd": "2026-11-23T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695"
-    },
     {
       "id": 15632,
       "title": "Harmonized classification and labelling of certain substances (CLP Regulation)",
@@ -203,7 +166,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-18T23:59:59Z",
+      "feedbackEnd": "2027-01-19T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -3865,6 +3828,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14750"
     },
     {
+      "id": 19852,
+      "title": "Amendment to the Monitoring and Reporting Regulation",
+      "reference": "Ares(2026)10728214",
+      "actType": "REG_IMPL",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19852"
+    },
+    {
       "id": 19792,
       "title": "EU emissions trading system (ETS2) - verification simplification for regulated entities with low emissions",
       "reference": "Ares(2026)10534919",
@@ -4191,6 +4172,25 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13287"
+    },
+    {
+      "id": 16772,
+      "title": "Amendment to the CO2 determination regulation for heavy-duty vehicles",
+      "reference": "Ares(2026)1302518",
+      "actType": "REG",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Transport"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-26T09:51:00Z",
+      "feedbackEnd": "2026-11-23T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16772"
     },
     {
       "id": 19225,
@@ -8066,6 +8066,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12131"
+    },
+    {
+      "id": 18695,
+      "title": "Hydrogen strategy",
+      "reference": "Ares(2026)6682358",
+      "actType": "COMMUNIC",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Energy"
+      ],
+      "topicCodes": [
+        "ENER"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-26T10:17:00Z",
+      "feedbackEnd": "2026-11-23T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18695"
     },
     {
       "id": 15032,
