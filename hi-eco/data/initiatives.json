@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T15:41:35.743Z",
+  "generatedAt": "2026-11-25T15:26:02.998Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -21,46 +21,10 @@
   ],
   "failedTopics": [],
   "counts": {
-    "total": 615,
-    "open": 9
+    "total": 616,
+    "open": 8
   },
   "initiatives": [
-    {
-      "id": 15632,
-      "title": "Harmonized classification and labelling of certain substances (CLP Regulation)",
-      "reference": "Ares(2025)9555728",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-27T10:34:29Z",
-      "feedbackEnd": "2026-11-24T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15632"
-    },
-    {
-      "id": 17632,
-      "title": "Classification, labelling and packaging of substances and mixtures (CLP Regulation)",
-      "reference": "Ares(2026)3572407",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-27T10:34:00Z",
-      "feedbackEnd": "2026-11-24T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632"
-    },
     {
       "id": 16773,
       "title": "Heavy-duty trailers – inclusion of new trailer technologies in the CO2 determination methodology",
@@ -135,6 +99,24 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19293"
     },
     {
+      "id": 17993,
+      "title": "Exemption from the extended producer responsibility concerning urban wastewater treatment",
+      "reference": "Ares(2026)4363933",
+      "actType": "DEC_IMPL",
+      "stage": "PLANNING_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-11-25T11:17:20Z",
+      "feedbackEnd": "2027-01-06T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17993"
+    },
+    {
       "id": 19498,
       "title": "EU rules on biobased feedstock in plastic packaging",
       "reference": "Ares(2026)9620334",
@@ -166,7 +148,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-19T23:59:59Z",
+      "feedbackEnd": "2027-01-20T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -184,7 +166,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-03T09:36:17Z",
-      "feedbackEnd": "2027-02-09T23:59:59Z",
+      "feedbackEnd": "2027-02-28T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17873"
     },
@@ -205,6 +187,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19412"
+    },
+    {
+      "id": 19872,
+      "title": "Guidance on the recast urban wastewater treatment Directive",
+      "reference": "Ares(2026)10791205",
+      "actType": "JOINT_TEXT",
+      "stage": "INIT_PLANNED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19872"
     },
     {
       "id": 18855,
@@ -349,24 +349,6 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17994"
-    },
-    {
-      "id": 17993,
-      "title": "Exemption from the extended producer responsibility concerning urban wastewater treatment",
-      "reference": "Ares(2026)4363933",
-      "actType": "DEC_IMPL",
-      "stage": "INIT_PLANNED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": null,
-      "feedbackEnd": null,
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17993"
     },
     {
       "id": 17772,
@@ -890,6 +872,42 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12879"
+    },
+    {
+      "id": 17632,
+      "title": "Classification, labelling and packaging of substances and mixtures (CLP Regulation)",
+      "reference": "Ares(2026)3572407",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-27T10:34:00Z",
+      "feedbackEnd": "2026-11-24T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17632"
+    },
+    {
+      "id": 15632,
+      "title": "Harmonized classification and labelling of certain substances (CLP Regulation)",
+      "reference": "Ares(2025)9555728",
+      "actType": "REG_DEL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-27T10:34:29Z",
+      "feedbackEnd": "2026-11-24T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15632"
     },
     {
       "id": 19475,
@@ -2819,10 +2837,10 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14857"
     },
     {
-      "id": 18053,
-      "title": "Deforestation - Amendments, simplifications, and technical fixes to Annex I",
-      "reference": "Ares(2026)4548384",
-      "actType": "REG_DEL",
+      "id": 2137,
+      "title": "Clarifying the application of REACH registration and data-sharing provisions after the deadline for phase-in substances",
+      "reference": "Ares(2019)1957652",
+      "actType": "REG_IMPL",
       "stage": "ADOPTION_WORKFLOW",
       "topics": [
         "Environment"
@@ -2834,7 +2852,7 @@
       "feedbackStart": null,
       "feedbackEnd": null,
       "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18053"
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/2137"
     },
     {
       "id": 11676,
@@ -4301,25 +4319,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17032"
     },
     {
-      "id": 14132,
-      "title": "Sale and repurchase of CBAM certificates",
-      "reference": "Ares(2024)546926",
-      "actType": "REG_DEL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Climate action",
-        "Taxation"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-07-09T11:08:21Z",
-      "feedbackEnd": "2026-08-06T23:59:59Z",
-      "feedbackOpen": false,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14132"
-    },
-    {
       "id": 14830,
       "title": "Carbon price paid in a third country under the carbon border adjustment mechanism (CBAM)",
       "reference": "Ares(2025)6809938",
@@ -5179,6 +5178,25 @@
       "feedbackEnd": "2017-08-02T23:59:59Z",
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/1350"
+    },
+    {
+      "id": 14132,
+      "title": "Sale and repurchase of CBAM certificates",
+      "reference": "Ares(2024)546926",
+      "actType": "REG_DEL",
+      "stage": "ADOPTION_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Taxation"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": null,
+      "feedbackEnd": null,
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14132"
     },
     {
       "id": 14574,
