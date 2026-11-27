@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T14:55:51.010Z",
+  "generatedAt": "2026-11-27T14:52:53.131Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,28 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 616,
-    "open": 8
+    "open": 7
   },
   "initiatives": [
-    {
-      "id": 16773,
-      "title": "Heavy-duty trailers – inclusion of new trailer technologies in the CO2 determination methodology",
-      "reference": "Ares(2026)1302634",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Climate action",
-        "Transport"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-29T12:51:21Z",
-      "feedbackEnd": "2026-11-26T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
-    },
     {
       "id": 16240,
       "title": "States considered to be applying CORSIA in 2026 for ETS purposes",
@@ -117,24 +98,6 @@
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17993"
     },
     {
-      "id": 19498,
-      "title": "EU rules on biobased feedstock in plastic packaging",
-      "reference": "Ares(2026)9620334",
-      "actType": "PROP_REG",
-      "stage": "OPC_LAUNCHED",
-      "topics": [
-        "Environment"
-      ],
-      "topicCodes": [
-        "ENV"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-21T15:51:35Z",
-      "feedbackEnd": "2027-01-13T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
-    },
-    {
       "id": 14770,
       "title": "European climate resilience and risk management law",
       "reference": "Ares(2025)5580019",
@@ -148,9 +111,27 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-21T23:59:59Z",
+      "feedbackEnd": "2027-01-22T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
+    },
+    {
+      "id": 19498,
+      "title": "EU rules on biobased feedstock in plastic packaging",
+      "reference": "Ares(2026)9620334",
+      "actType": "PROP_REG",
+      "stage": "OPC_LAUNCHED",
+      "topics": [
+        "Environment"
+      ],
+      "topicCodes": [
+        "ENV"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-21T15:51:35Z",
+      "feedbackEnd": "2027-02-19T23:59:59Z",
+      "feedbackOpen": true,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19498"
     },
     {
       "id": 17873,
@@ -4190,6 +4171,25 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13287"
+    },
+    {
+      "id": 16773,
+      "title": "Heavy-duty trailers – inclusion of new trailer technologies in the CO2 determination methodology",
+      "reference": "Ares(2026)1302634",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action",
+        "Transport"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-29T12:51:21Z",
+      "feedbackEnd": "2026-11-26T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16773"
     },
     {
       "id": 16772,
