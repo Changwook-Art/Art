@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T14:52:53.131Z",
+  "generatedAt": "2026-11-28T14:01:12.069Z",
   "sample": false,
   "source": "EU Have Your Say (ec.europa.eu/info/law/better-regulation)",
   "topics": [
@@ -22,27 +22,9 @@
   "failedTopics": [],
   "counts": {
     "total": 616,
-    "open": 7
+    "open": 6
   },
   "initiatives": [
-    {
-      "id": 16240,
-      "title": "States considered to be applying CORSIA in 2026 for ETS purposes",
-      "reference": "Ares(2025)11438579",
-      "actType": "REG_IMPL",
-      "stage": "ISC_WORKFLOW",
-      "topics": [
-        "Climate action"
-      ],
-      "topicCodes": [
-        "CLIMA"
-      ],
-      "published": null,
-      "feedbackStart": "2026-10-30T17:34:00Z",
-      "feedbackEnd": "2026-11-27T23:59:59Z",
-      "feedbackOpen": true,
-      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240"
-    },
     {
       "id": 16414,
       "title": "Certification methodologies for carbon storage in long-lasting products",
@@ -111,7 +93,7 @@
       ],
       "published": null,
       "feedbackStart": "2026-11-04T14:42:25Z",
-      "feedbackEnd": "2027-01-22T23:59:59Z",
+      "feedbackEnd": "2027-01-23T23:59:59Z",
       "feedbackOpen": true,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14770"
     },
@@ -4171,6 +4153,24 @@
       "feedbackEnd": null,
       "feedbackOpen": false,
       "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/13287"
+    },
+    {
+      "id": 16240,
+      "title": "States considered to be applying CORSIA in 2026 for ETS purposes",
+      "reference": "Ares(2025)11438579",
+      "actType": "REG_IMPL",
+      "stage": "ISC_WORKFLOW",
+      "topics": [
+        "Climate action"
+      ],
+      "topicCodes": [
+        "CLIMA"
+      ],
+      "published": null,
+      "feedbackStart": "2026-10-30T17:34:00Z",
+      "feedbackEnd": "2026-11-27T23:59:59Z",
+      "feedbackOpen": false,
+      "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16240"
     },
     {
       "id": 16773,
